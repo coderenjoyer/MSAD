@@ -13,42 +13,18 @@ namespace MSAD
 {
     public partial class signin : Form
     {
-        public signin()
+        private Flogin _mainForm;
+
+        public signin(Flogin mainForm)
         {
             InitializeComponent();
+            _mainForm = mainForm;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            bool isAdmin;
-
-            if (ValidateLogin(txtschID.Text, txtpass.Text, out isAdmin))
-            {
-                MessageBox.Show("Login successful!");
-
-                if (isAdmin)
-                {
-                    Admin adminHome = new Admin();
-                    adminHome.Show();
-                }
-                else
-                {
-                    UserHome userHome = new UserHome();
-                    userHome.Show();
-                }
-
-                this.Hide();
-            }
-            else
-            {
-                MessageBox.Show("Invalid user ID or password.");
-            }
-        }
-
-        private bool ValidateLogin(string username, string password, out bool isAdmin)
-        {
             string connectionString = "Data Source=tekdoc.database.windows.net;Initial Catalog=TekDoc;User ID=khalil.peque@cit.edu;Password=Miakhally311;Encrypt=True;Authentication=ActiveDirectoryPassword";
-            isAdmin = false;
+            string query = "SELECT account_id, username FROM [Accs] WHERE username = @Username AND pass = @Password";
 
             try
             {
@@ -56,31 +32,89 @@ namespace MSAD
                 {
                     connection.Open();
 
-
-                    if (username.ToLower() == "admin")
+                    using (SqlCommand command = new SqlCommand(query, connection))
                     {
-                        string adminQuery = "SELECT COUNT(1) FROM [Accs] WHERE [username] = @Username AND [pass] = @Password";
-                        using (SqlCommand adminCommand = new SqlCommand(adminQuery, connection))
+                        command.Parameters.AddWithValue("@Username", txtschID.Text);
+                        command.Parameters.AddWithValue("@Password", txtpass.Text);
+
+                        using (SqlDataReader reader = command.ExecuteReader())
                         {
-                            adminCommand.Parameters.AddWithValue("@Username", username);
-                            adminCommand.Parameters.AddWithValue("@Password", password);
+                            if (reader.Read())
+                            {
+                                int accountId = reader.GetInt32(0);
+                                string username = reader.GetString(1);
 
-                            int count = Convert.ToInt32(adminCommand.ExecuteScalar());
+                                MessageBox.Show("Login successful!");
 
-                            isAdmin = count == 1;
-                            return isAdmin;
+                                if (username == "admin")
+                                {
+                                    Admin adminHome = new Admin();
+                                    adminHome.Show();
+                                }
+                                else
+                                {
+                                    UserHome userHome = new UserHome(accountId);
+                                    userHome.Show();
+                                }
+
+                                this.Hide();
+                                _mainForm.Hide();
+                            }
+                            else
+                            {
+                                MessageBox.Show("Invalid user ID or password.");
+                            }
                         }
                     }
-                    else
-                    {
-                        string userQuery = "SELECT COUNT(1) FROM [Accs] WHERE [username] = @Username AND [pass] = @Password";
-                        using (SqlCommand userCommand = new SqlCommand(userQuery, connection))
-                        {
-                            userCommand.Parameters.AddWithValue("@Username", username);
-                            userCommand.Parameters.AddWithValue("@Password", password);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("An error occurred while validating the login: " + ex.Message);
+            }
+        }
+    }
+}
+        /*private bool ValidateLogin(string username, string password, out bool isAdmin, out int? profileId)
+        {
+            string connectionString = "Data Source=tekdoc.database.windows.net;Initial Catalog=TekDoc;User ID=khalil.peque@cit.edu;Password=Miakhally311;Encrypt=True;Authentication=ActiveDirectoryPassword";
+            string query = @"
+        SELECT A.[username], 
+               CASE 
+                   WHEN A.[username] = 'admin' THEN 1 
+                   ELSE 0 
+               END AS IsAdmin,
+               UP.[profile_id]
+        FROM [Accs] A
+        LEFT JOIN [UserProfile] UP ON A.[account_id] = UP.[account_id]
+        WHERE A.[username] = @Username AND A.[pass] = @Password";
 
-                            int count = Convert.ToInt32(userCommand.ExecuteScalar());
-                            return count == 1;
+            isAdmin = false;
+            profileId = null;
+
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    connection.Open();
+
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@Username", username);
+                        command.Parameters.AddWithValue("@Password", password);
+
+                        using (SqlDataReader reader = command.ExecuteReader())
+                        {
+                            if (reader.Read())
+                            {
+                                isAdmin = reader.GetInt32(reader.GetOrdinal("IsAdmin")) == 1;
+                                profileId = reader.IsDBNull(reader.GetOrdinal("profile_id")) ? (int?)null : reader.GetInt32(reader.GetOrdinal("profile_id"));
+                                return true; // Login is successful
+                            }
+                            else
+                            {
+                                return false; // Invalid username or password
+                            }
                         }
                     }
                 }
@@ -93,3 +127,4 @@ namespace MSAD
         }
     }
 }
+*/

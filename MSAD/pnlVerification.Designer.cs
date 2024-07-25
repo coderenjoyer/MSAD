@@ -30,6 +30,8 @@
         {
             sqlCommand1 = new Microsoft.Data.SqlClient.SqlCommand();
             label1 = new Label();
+            dgvdocureq = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)dgvdocureq).BeginInit();
             SuspendLayout();
             // 
             // sqlCommand1
@@ -40,19 +42,31 @@
             // label1
             // 
             label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(20, 31);
+            label1.Location = new Point(18, 23);
             label1.Name = "label1";
-            label1.Size = new Size(401, 45);
+            label1.Size = new Size(351, 34);
             label1.TabIndex = 3;
             label1.Text = "Verification Page";
             // 
+            // dgvdocureq
+            // 
+            dgvdocureq.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvdocureq.Location = new Point(18, 72);
+            dgvdocureq.Name = "dgvdocureq";
+            dgvdocureq.Size = new Size(1584, 575);
+            dgvdocureq.TabIndex = 4;
+            // 
             // pnlVerification
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(dgvdocureq);
             Controls.Add(label1);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "pnlVerification";
-            Size = new Size(1924, 795);
+            Size = new Size(1699, 746);
+            Load += pnlVerification_Load;
+            ((System.ComponentModel.ISupportInitialize)dgvdocureq).EndInit();
             ResumeLayout(false);
         }
 
@@ -60,5 +74,6 @@
 
         private Microsoft.Data.SqlClient.SqlCommand sqlCommand1;
         private Label label1;
+        private DataGridView dgvdocureq;
     }
 }

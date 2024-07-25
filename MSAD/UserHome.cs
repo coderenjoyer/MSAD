@@ -12,9 +12,12 @@ namespace MSAD
 {
     public partial class UserHome : Form
     {
-        public UserHome()
+        private int accountId;
+
+        public UserHome(int accountId)
         {
             InitializeComponent();
+            this.accountId = accountId;
         }
 
         public void loadform(object form)
@@ -48,16 +51,13 @@ namespace MSAD
 
         private void btnlogout_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show("Are you sure you want to log out?", "Logout Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-
-            if (result == DialogResult.Yes)
-            {
-                Flogin flogin = new Flogin();
-                flogin.Show();
-                this.Hide();
-            }
+            logout();
         }
 
+        private void UserHome_Load(object sender, EventArgs e)
+        {
+            loadform(new userdashboard(accountId));
+        }
     }
 
 

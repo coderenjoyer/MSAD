@@ -48,12 +48,23 @@ namespace MSAD
 
         private void btnsignin_Click(object sender, EventArgs e)
         {
-            loadform(new signin());
+            loadform(new signin(this));
         }
 
         private void Flogin_Load(object sender, EventArgs e)
         {
-            loadform(new signin());
+            loadform(new signin(this));
+        }
+
+        private void ShowPanelForm()
+        {
+            signin signin = new signin(this);
+            signin.Show();
+        }
+
+        private void btnexit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

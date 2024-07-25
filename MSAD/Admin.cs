@@ -16,7 +16,7 @@ namespace MSAD
         pnlDash pnlDash = new pnlDash();
         pnlVerification pnlVerification = new pnlVerification();
         pnlHistory pnlHistory = new pnlHistory();
-        signin signin = new signin();
+
 
         public Admin()
         {
@@ -42,9 +42,9 @@ namespace MSAD
         private void btnDash_Click(object sender, EventArgs e)
         {
             btnClearColor();
-            btnDash.BackColor = Color.Gold;//sets button to gold
+            btnDash.BackColor = Color.Gold;
 
-            //clears and add the verificaiton user control
+           
             mainPanel.Controls.Clear();
             mainPanel.Controls.Add(pnlDash);
         }
@@ -67,7 +67,7 @@ namespace MSAD
             mainPanel.Controls.Add(pnlHistory);
         }
 
-        //clears the color of the buttons
+        
         private void btnClearColor()
         {
             btnDash.BackColor = SystemColors.Window;
@@ -82,8 +82,10 @@ namespace MSAD
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
+            Flogin flogin = new Flogin();
+            flogin.Show();
             this.Close();
-            signin.Show();
+            
         }
     }
 }
