@@ -64,7 +64,7 @@
             Controls.Add(label1);
             Margin = new Padding(3, 2, 3, 2);
             Name = "pnlVerification";
-            Size = new Size(1699, 746);
+            Size = new Size(1904, 846);
             Load += pnlVerification_Load;
             ((System.ComponentModel.ISupportInitialize)dgvdocureq).EndInit();
             ResumeLayout(false);

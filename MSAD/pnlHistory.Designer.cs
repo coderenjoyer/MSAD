@@ -47,7 +47,7 @@
             Controls.Add(label1);
             Margin = new Padding(3, 2, 3, 2);
             Name = "pnlHistory";
-            Size = new Size(1699, 746);
+            Size = new Size(1904, 846);
             ResumeLayout(false);
         }
 

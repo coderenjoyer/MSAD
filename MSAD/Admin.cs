@@ -16,7 +16,7 @@ namespace MSAD
         pnlDash pnlDash = new pnlDash();
         pnlVerification pnlVerification = new pnlVerification();
         pnlHistory pnlHistory = new pnlHistory();
-
+        pnlUsers pnlUsers = new pnlUsers();
 
         public Admin()
         {
@@ -44,7 +44,7 @@ namespace MSAD
             btnClearColor();
             btnDash.BackColor = Color.Gold;
 
-           
+
             mainPanel.Controls.Clear();
             mainPanel.Controls.Add(pnlDash);
         }
@@ -67,12 +67,13 @@ namespace MSAD
             mainPanel.Controls.Add(pnlHistory);
         }
 
-        
+
         private void btnClearColor()
         {
             btnDash.BackColor = SystemColors.Window;
             btnVerification.BackColor = SystemColors.Window;
             btnHistory.BackColor = SystemColors.Window;
+            btnUsers.BackColor = SystemColors.Window;
         }
 
         private void mainPanel_Paint(object sender, PaintEventArgs e)
@@ -85,7 +86,16 @@ namespace MSAD
             Flogin flogin = new Flogin();
             flogin.Show();
             this.Close();
-            
+
+        }
+
+        private void btnUsers_Click(object sender, EventArgs e)
+        {
+            btnClearColor();
+            btnUsers.BackColor = Color.Gold;
+
+            mainPanel.Controls.Clear();
+            mainPanel.Controls.Add(pnlUsers);
         }
     }
 }

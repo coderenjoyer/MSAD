@@ -33,12 +33,14 @@
             label2 = new Label();
             pictureBox1 = new PictureBox();
             pnlNavBar = new Panel();
+            btnUsers = new Button();
             btnLogout = new Button();
             btnHistory = new Button();
             btnVerification = new Button();
             btnDash = new Button();
             mainPanel = new Panel();
             sqlCommand1 = new Microsoft.Data.SqlClient.SqlCommand();
+            sqlCommand2 = new Microsoft.Data.SqlClient.SqlCommand();
             pblHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             pnlNavBar.SuspendLayout();
@@ -90,6 +92,7 @@
             // pnlNavBar
             // 
             pnlNavBar.BackColor = Color.Maroon;
+            pnlNavBar.Controls.Add(btnUsers);
             pnlNavBar.Controls.Add(btnLogout);
             pnlNavBar.Controls.Add(btnHistory);
             pnlNavBar.Controls.Add(btnVerification);
@@ -100,6 +103,21 @@
             pnlNavBar.Name = "pnlNavBar";
             pnlNavBar.Size = new Size(1904, 45);
             pnlNavBar.TabIndex = 1;
+            // 
+            // btnUsers
+            // 
+            btnUsers.BackColor = SystemColors.Control;
+            btnUsers.Dock = DockStyle.Left;
+            btnUsers.FlatStyle = FlatStyle.Flat;
+            btnUsers.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnUsers.Location = new Point(714, 0);
+            btnUsers.Margin = new Padding(3, 2, 3, 2);
+            btnUsers.Name = "btnUsers";
+            btnUsers.Size = new Size(238, 45);
+            btnUsers.TabIndex = 4;
+            btnUsers.Text = "Users";
+            btnUsers.UseVisualStyleBackColor = false;
+            btnUsers.Click += btnUsers_Click;
             // 
             // btnLogout
             // 
@@ -174,6 +192,11 @@
             sqlCommand1.CommandTimeout = 30;
             sqlCommand1.EnableOptimizedParameterBinding = false;
             // 
+            // sqlCommand2
+            // 
+            sqlCommand2.CommandTimeout = 30;
+            sqlCommand2.EnableOptimizedParameterBinding = false;
+            // 
             // Admin
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -220,5 +243,7 @@
         private Label label8;
         private Label label7;
         private Label label6;
+        private Button btnUsers;
+        private Microsoft.Data.SqlClient.SqlCommand sqlCommand2;
     }
 }

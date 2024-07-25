@@ -50,6 +50,8 @@ namespace MSAD
                                 {
                                     Admin adminHome = new Admin();
                                     adminHome.Show();
+                                    this.Hide();
+                                    _mainForm.Hide();
                                 }
                                 else
                                 {
