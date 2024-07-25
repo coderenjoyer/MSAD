@@ -12,6 +12,7 @@ using System.Net.Mail;
 using System.Net;
 using Microsoft.Identity.Client;
 using static System.Runtime.InteropServices.JavaScript.JSType;
+using System.Drawing.Drawing2D;
 
 namespace MSAD
 {
@@ -21,7 +22,32 @@ namespace MSAD
         public pnlVerification()
         {
             InitializeComponent();
+            pnlEmail.Paint += Panel_Paint;
         }
+        private void Panel_Paint(object sender, PaintEventArgs e)
+        {
+            Panel panel = sender as Panel;
+            if (panel != null)
+            {
+                // Get the rectangle representing the bounds of the panel
+                Rectangle rect = new Rectangle(0, 0, panel.Width, panel.Height);
+
+                // Set the radius for rounded corners based on the panel's size
+                int radius = Math.Min(panel.Width, panel.Height) / 12; // Increase the divisor for less rounded corners
+
+                // Create a graphics path for rounded corners
+                GraphicsPath path = new GraphicsPath();
+                path.AddArc(rect.X, rect.Y, radius, radius, 180, 90);
+                path.AddArc(rect.Right - radius, rect.Y, radius, radius, 270, 90);
+                path.AddArc(rect.Right - radius, rect.Bottom - radius, radius, radius, 0, 90);
+                path.AddArc(rect.X, rect.Bottom - radius, radius, radius, 90, 90);
+                path.CloseFigure();
+
+                // Apply the graphics path to the panel's region
+                panel.Region = new Region(path);
+            }
+        }
+
 
         private void Loaddata()
         {
