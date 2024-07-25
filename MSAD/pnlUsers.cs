@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace MSAD
 {
-    public partial class pnlDash : UserControl
+    public partial class pnlUsers : UserControl
     {
-        public pnlDash()
+        public pnlUsers()
         {
             InitializeComponent();
         }
 
-        private void pnlDash_Load(object sender, EventArgs e)
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             groupBox1 = new GroupBox();
+            label4 = new Label();
+            label3 = new Label();
             button1 = new Button();
             label2 = new Label();
             label1 = new Label();
@@ -41,63 +43,87 @@
             // 
             // groupBox1
             // 
+            groupBox1.BackColor = Color.Maroon;
+            groupBox1.Controls.Add(label4);
+            groupBox1.Controls.Add(label3);
             groupBox1.Controls.Add(button1);
             groupBox1.Controls.Add(label2);
             groupBox1.Controls.Add(label1);
             groupBox1.Controls.Add(txtpass);
             groupBox1.Controls.Add(txtschID);
-            groupBox1.Location = new Point(1438, 195);
-            groupBox1.Margin = new Padding(3, 4, 3, 4);
+            groupBox1.Location = new Point(758, 145);
             groupBox1.Name = "groupBox1";
-            groupBox1.Padding = new Padding(3, 4, 3, 4);
-            groupBox1.Size = new Size(461, 467);
+            groupBox1.Size = new Size(403, 456);
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
-            groupBox1.Text = "Sign In to Account";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.ForeColor = Color.White;
+            label4.Location = new Point(49, 111);
+            label4.Name = "label4";
+            label4.Size = new Size(312, 15);
+            label4.TabIndex = 6;
+            label4.Text = "_____________________________________________________________";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label3.ForeColor = Color.White;
+            label3.Location = new Point(50, 61);
+            label3.Name = "label3";
+            label3.Size = new Size(302, 45);
+            label3.TabIndex = 5;
+            label3.Text = "User Authentication";
             // 
             // button1
             // 
-            button1.Location = new Point(168, 379);
-            button1.Margin = new Padding(3, 4, 3, 4);
+            button1.BackColor = Color.Gold;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Location = new Point(102, 327);
             button1.Name = "button1";
-            button1.Size = new Size(127, 44);
+            button1.Size = new Size(199, 33);
             button1.TabIndex = 4;
             button1.Text = "Login";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(77, 237);
+            label2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label2.ForeColor = Color.White;
+            label2.Location = new Point(63, 240);
             label2.Name = "label2";
-            label2.Size = new Size(70, 20);
+            label2.Size = new Size(79, 21);
             label2.TabIndex = 3;
-            label2.Text = "Password";
+            label2.Text = "Password:";
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(77, 100);
+            label1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(63, 172);
             label1.Name = "label1";
-            label1.Size = new Size(73, 20);
+            label1.Size = new Size(141, 21);
             label1.TabIndex = 2;
-            label1.Text = "School ID";
+            label1.Text = "School ID Number:";
             // 
             // txtpass
             // 
-            txtpass.Location = new Point(77, 277);
-            txtpass.Margin = new Padding(3, 4, 3, 4);
+            txtpass.Location = new Point(63, 270);
             txtpass.Name = "txtpass";
-            txtpass.Size = new Size(306, 27);
+            txtpass.Size = new Size(268, 23);
             txtpass.TabIndex = 1;
             // 
             // txtschID
             // 
-            txtschID.Location = new Point(77, 143);
-            txtschID.Margin = new Padding(3, 4, 3, 4);
+            txtschID.Location = new Point(63, 204);
             txtschID.Name = "txtschID";
-            txtschID.Size = new Size(306, 27);
+            txtschID.Size = new Size(268, 23);
             txtschID.TabIndex = 0;
             // 
             // pictureBox1
@@ -106,21 +132,19 @@
             pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
             pictureBox1.Dock = DockStyle.Fill;
             pictureBox1.Location = new Point(0, 0);
-            pictureBox1.Margin = new Padding(3, 4, 3, 4);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(1942, 995);
+            pictureBox1.Size = new Size(1699, 746);
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
             // 
             // signin
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1942, 995);
+            ClientSize = new Size(1699, 746);
             Controls.Add(groupBox1);
             Controls.Add(pictureBox1);
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(3, 4, 3, 4);
             Name = "signin";
             Text = "signin";
             groupBox1.ResumeLayout(false);
@@ -138,5 +162,7 @@
         private TextBox txtpass;
         private TextBox txtschID;
         private PictureBox pictureBox1;
+        private Label label4;
+        private Label label3;
     }
 }

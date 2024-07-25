@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace MSAD
 {
-    public partial class pnlDash : UserControl
+    public partial class Request : Form
     {
-        public pnlDash()
+        public Request()
         {
             InitializeComponent();
-        }
-
-        private void pnlDash_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -56,19 +56,21 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(302, 100);
+            label3.Font = new Font("MS Reference Sans Serif", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label3.Location = new Point(228, 106);
             label3.Name = "label3";
-            label3.Size = new Size(137, 15);
+            label3.Size = new Size(243, 24);
             label3.TabIndex = 5;
             label3.Text = "Document Retrieval Hub";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("MS UI Gothic", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(279, 34);
+            label2.Font = new Font("Pristina", 69.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.ForeColor = Color.Maroon;
+            label2.Location = new Point(195, 15);
             label2.Name = "label2";
-            label2.Size = new Size(177, 48);
+            label2.Size = new Size(302, 122);
             label2.TabIndex = 4;
             label2.Text = "TekDok";
             // 
@@ -85,7 +87,8 @@
             // 
             // panel2
             // 
-            panel2.BackColor = Color.Maroon;
+            panel2.BackColor = Color.Gold;
+            panel2.BorderStyle = BorderStyle.FixedSingle;
             panel2.Controls.Add(btnlogout);
             panel2.Controls.Add(btnreqdoc);
             panel2.Controls.Add(btnhome);
@@ -97,34 +100,46 @@
             // 
             // btnlogout
             // 
+            btnlogout.BackColor = Color.Maroon;
             btnlogout.Dock = DockStyle.Right;
-            btnlogout.Location = new Point(1666, 0);
+            btnlogout.FlatStyle = FlatStyle.Flat;
+            btnlogout.Font = new Font("Sitka Subheading", 14.2499981F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnlogout.ForeColor = Color.White;
+            btnlogout.Location = new Point(1659, 0);
             btnlogout.Name = "btnlogout";
-            btnlogout.Size = new Size(238, 45);
+            btnlogout.Size = new Size(243, 43);
             btnlogout.TabIndex = 3;
             btnlogout.Text = "Log Out";
-            btnlogout.UseVisualStyleBackColor = true;
+            btnlogout.UseVisualStyleBackColor = false;
             btnlogout.Click += btnlogout_Click;
             // 
             // btnreqdoc
             // 
+            btnreqdoc.BackColor = Color.Maroon;
             btnreqdoc.Dock = DockStyle.Left;
-            btnreqdoc.Location = new Point(238, 0);
+            btnreqdoc.FlatStyle = FlatStyle.Flat;
+            btnreqdoc.Font = new Font("Sitka Small", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnreqdoc.ForeColor = Color.White;
+            btnreqdoc.Location = new Point(244, 0);
             btnreqdoc.Name = "btnreqdoc";
-            btnreqdoc.Size = new Size(238, 45);
+            btnreqdoc.Size = new Size(232, 43);
             btnreqdoc.TabIndex = 3;
-            btnreqdoc.Text = "Request Document";
-            btnreqdoc.UseVisualStyleBackColor = true;
+            btnreqdoc.Text = "Document Status";
+            btnreqdoc.UseVisualStyleBackColor = false;
             // 
             // btnhome
             // 
+            btnhome.BackColor = Color.Maroon;
             btnhome.Dock = DockStyle.Left;
+            btnhome.FlatStyle = FlatStyle.Flat;
+            btnhome.Font = new Font("Sitka Small", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnhome.ForeColor = Color.White;
             btnhome.Location = new Point(0, 0);
             btnhome.Name = "btnhome";
-            btnhome.Size = new Size(238, 45);
+            btnhome.Size = new Size(244, 43);
             btnhome.TabIndex = 2;
             btnhome.Text = "Home";
-            btnhome.UseVisualStyleBackColor = true;
+            btnhome.UseVisualStyleBackColor = false;
             btnhome.Click += btnhome_Click;
             // 
             // mainpanel
@@ -145,6 +160,7 @@
             Controls.Add(panel1);
             Name = "UserHome";
             Text = "UserHome";
+            Load += UserHome_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

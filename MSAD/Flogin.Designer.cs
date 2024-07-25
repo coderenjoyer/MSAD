@@ -33,6 +33,7 @@
             label2 = new Label();
             pictureBox1 = new PictureBox();
             panel2 = new Panel();
+            btnexit = new Button();
             btnsignin = new Button();
             btnregis = new Button();
             mainpanel = new Panel();
@@ -55,21 +56,22 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(302, 100);
+            label3.Font = new Font("MS Reference Sans Serif", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label3.Location = new Point(228, 106);
             label3.Name = "label3";
-            label3.Size = new Size(137, 15);
-            label3.TabIndex = 3;
+            label3.Size = new Size(243, 24);
+            label3.TabIndex = 7;
             label3.Text = "Document Retrieval Hub";
-            label3.Click += label3_Click;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("MS UI Gothic", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(279, 34);
+            label2.Font = new Font("Pristina", 69.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.ForeColor = Color.Maroon;
+            label2.Location = new Point(195, 15);
             label2.Name = "label2";
-            label2.Size = new Size(177, 48);
-            label2.TabIndex = 2;
+            label2.Size = new Size(302, 122);
+            label2.TabIndex = 6;
             label2.Text = "TekDok";
             // 
             // pictureBox1
@@ -85,7 +87,9 @@
             // 
             // panel2
             // 
-            panel2.BackColor = Color.Maroon;
+            panel2.BackColor = Color.Gold;
+            panel2.BorderStyle = BorderStyle.FixedSingle;
+            panel2.Controls.Add(btnexit);
             panel2.Controls.Add(btnsignin);
             panel2.Controls.Add(btnregis);
             panel2.Dock = DockStyle.Top;
@@ -94,26 +98,49 @@
             panel2.Size = new Size(1904, 45);
             panel2.TabIndex = 1;
             // 
+            // btnexit
+            // 
+            btnexit.BackColor = Color.Maroon;
+            btnexit.Dock = DockStyle.Right;
+            btnexit.FlatStyle = FlatStyle.Flat;
+            btnexit.Font = new Font("Sitka Small", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnexit.ForeColor = Color.White;
+            btnexit.Location = new Point(1658, 0);
+            btnexit.Name = "btnexit";
+            btnexit.Size = new Size(244, 43);
+            btnexit.TabIndex = 0;
+            btnexit.Text = "Exit";
+            btnexit.UseVisualStyleBackColor = false;
+            btnexit.Click += btnexit_Click;
+            // 
             // btnsignin
             // 
+            btnsignin.BackColor = Color.Maroon;
             btnsignin.Dock = DockStyle.Left;
+            btnsignin.FlatStyle = FlatStyle.Flat;
+            btnsignin.Font = new Font("Sitka Small", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnsignin.ForeColor = Color.White;
             btnsignin.Location = new Point(244, 0);
             btnsignin.Name = "btnsignin";
-            btnsignin.Size = new Size(244, 45);
+            btnsignin.Size = new Size(226, 43);
             btnsignin.TabIndex = 6;
             btnsignin.Text = "Sign In";
-            btnsignin.UseVisualStyleBackColor = true;
+            btnsignin.UseVisualStyleBackColor = false;
             btnsignin.Click += btnsignin_Click;
             // 
             // btnregis
             // 
+            btnregis.BackColor = Color.Maroon;
             btnregis.Dock = DockStyle.Left;
+            btnregis.FlatStyle = FlatStyle.Flat;
+            btnregis.Font = new Font("Sitka Small", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnregis.ForeColor = Color.White;
             btnregis.Location = new Point(0, 0);
             btnregis.Name = "btnregis";
-            btnregis.Size = new Size(244, 45);
+            btnregis.Size = new Size(244, 43);
             btnregis.TabIndex = 5;
             btnregis.Text = "Register";
-            btnregis.UseVisualStyleBackColor = true;
+            btnregis.UseVisualStyleBackColor = false;
             btnregis.Click += btnregis_Click;
             // 
             // mainpanel
@@ -148,9 +175,10 @@
         private Panel panel2;
         private Panel mainpanel;
         private PictureBox pictureBox1;
-        private Label label3;
-        private Label label2;
         private Button btnregis;
         private Button btnsignin;
+        private Button btnexit;
+        private Label label3;
+        private Label label2;
     }
 }
