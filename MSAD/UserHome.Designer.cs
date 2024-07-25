@@ -105,9 +105,9 @@
             btnlogout.FlatStyle = FlatStyle.Flat;
             btnlogout.Font = new Font("Sitka Subheading", 14.2499981F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnlogout.ForeColor = Color.White;
-            btnlogout.Location = new Point(1664, 0);
+            btnlogout.Location = new Point(1659, 0);
             btnlogout.Name = "btnlogout";
-            btnlogout.Size = new Size(238, 43);
+            btnlogout.Size = new Size(243, 43);
             btnlogout.TabIndex = 3;
             btnlogout.Text = "Log Out";
             btnlogout.UseVisualStyleBackColor = false;
@@ -120,9 +120,9 @@
             btnreqdoc.FlatStyle = FlatStyle.Flat;
             btnreqdoc.Font = new Font("Sitka Small", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnreqdoc.ForeColor = Color.White;
-            btnreqdoc.Location = new Point(238, 0);
+            btnreqdoc.Location = new Point(244, 0);
             btnreqdoc.Name = "btnreqdoc";
-            btnreqdoc.Size = new Size(238, 43);
+            btnreqdoc.Size = new Size(232, 43);
             btnreqdoc.TabIndex = 3;
             btnreqdoc.Text = "Document Status";
             btnreqdoc.UseVisualStyleBackColor = false;
@@ -136,7 +136,7 @@
             btnhome.ForeColor = Color.White;
             btnhome.Location = new Point(0, 0);
             btnhome.Name = "btnhome";
-            btnhome.Size = new Size(238, 43);
+            btnhome.Size = new Size(244, 43);
             btnhome.TabIndex = 2;
             btnhome.Text = "Home";
             btnhome.UseVisualStyleBackColor = false;

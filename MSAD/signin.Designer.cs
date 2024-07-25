@@ -51,7 +51,7 @@
             groupBox1.Controls.Add(label1);
             groupBox1.Controls.Add(txtpass);
             groupBox1.Controls.Add(txtschID);
-            groupBox1.Location = new Point(648, 145);
+            groupBox1.Location = new Point(758, 145);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new Size(403, 456);
             groupBox1.TabIndex = 0;

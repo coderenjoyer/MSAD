@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
+            label3 = new Label();
+            label2 = new Label();
             pictureBox1 = new PictureBox();
             panel2 = new Panel();
             btnexit = new Button();
             btnsignin = new Button();
             btnregis = new Button();
             mainpanel = new Panel();
-            label3 = new Label();
-            label2 = new Label();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel2.SuspendLayout();
@@ -52,6 +52,27 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(1904, 150);
             panel1.TabIndex = 0;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("MS Reference Sans Serif", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label3.Location = new Point(228, 106);
+            label3.Name = "label3";
+            label3.Size = new Size(243, 24);
+            label3.TabIndex = 7;
+            label3.Text = "Document Retrieval Hub";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Pristina", 69.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.ForeColor = Color.Maroon;
+            label2.Location = new Point(195, 15);
+            label2.Name = "label2";
+            label2.Size = new Size(302, 122);
+            label2.TabIndex = 6;
+            label2.Text = "TekDok";
             // 
             // pictureBox1
             // 
@@ -101,7 +122,7 @@
             btnsignin.ForeColor = Color.White;
             btnsignin.Location = new Point(244, 0);
             btnsignin.Name = "btnsignin";
-            btnsignin.Size = new Size(244, 43);
+            btnsignin.Size = new Size(226, 43);
             btnsignin.TabIndex = 6;
             btnsignin.Text = "Sign In";
             btnsignin.UseVisualStyleBackColor = false;
@@ -129,27 +150,6 @@
             mainpanel.Name = "mainpanel";
             mainpanel.Size = new Size(1904, 846);
             mainpanel.TabIndex = 2;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("MS Reference Sans Serif", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.Location = new Point(228, 106);
-            label3.Name = "label3";
-            label3.Size = new Size(243, 24);
-            label3.TabIndex = 7;
-            label3.Text = "Document Retrieval Hub";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Pristina", 69.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.ForeColor = Color.Maroon;
-            label2.Location = new Point(195, 15);
-            label2.Name = "label2";
-            label2.Size = new Size(302, 122);
-            label2.TabIndex = 6;
-            label2.Text = "TekDok";
             // 
             // Flogin
             // 
