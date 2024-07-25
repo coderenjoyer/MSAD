@@ -18,6 +18,7 @@ namespace MSAD
         public Flogin()
         {
             InitializeComponent();
+            loadform(new signin(this));
         }
 
         public void loadform(object form)

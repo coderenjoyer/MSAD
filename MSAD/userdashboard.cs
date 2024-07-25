@@ -26,7 +26,7 @@ namespace MSAD
         private void userdashboard_Load(object sender, EventArgs e)
         {
             string connectionString = "Data Source=tekdoc.database.windows.net;Initial Catalog=TekDoc;User ID=khalil.peque@cit.edu;Password=Miakhally311;Encrypt=True;Authentication=ActiveDirectoryPassword";
-            string query = "SELECT last_name, first_name, mi, classif, depart, prog, yrlvl, profi FROM UserProfile WHERE account_id = @AccId";
+            string query = "SELECT last_name, first_name, middle_name, classif, dept, prog, yrlvl, profi FROM UserProfile WHERE account_id = @AccId";
 
             try
             {
@@ -44,9 +44,9 @@ namespace MSAD
                             {
                                 lbllastn.Text = reader["last_name"].ToString();
                                 lblfirstn.Text = reader["first_name"].ToString();
-                                lblmi.Text = reader["mi"].ToString();
+                                lblmi.Text = reader["middle_name"].ToString();
                                 lblclassif.Text = reader["classif"].ToString();
-                                lbldepart.Text = reader["depart"].ToString();
+                                lbldepart.Text = reader["dept"].ToString();
                                 lblprog.Text = reader["prog"].ToString();
                                 lblyrlvl.Text = reader["yrlvl"].ToString();
 
@@ -73,11 +73,11 @@ namespace MSAD
         {
 
         }
-
+            
         private void btnsubmit_Click(object sender, EventArgs e)
         {
             string connectionString = "Data Source=tekdoc.database.windows.net;Initial Catalog=TekDoc;User ID=khalil.peque@cit.edu;Password=Miakhally311;Encrypt=True;Authentication=ActiveDirectoryPassword";
-            string query = "INSERT INTO [DocuRequest] (account_id, documenttype, reason, email) VALUES (@AccId, @DocumentType, @Reason, @Email)";
+            string query = "INSERT INTO [DocuRequest] (account_id, documenttype, reason, email, stat) VALUES (@AccId, @DocumentType, @Reason, @Email, @Stat)";
 
             try
             {
@@ -91,6 +91,7 @@ namespace MSAD
                         command.Parameters.AddWithValue("@DocumentType", cmbdocutype.SelectedItem.ToString());
                         command.Parameters.AddWithValue("@Reason", txtreason.Text);
                         command.Parameters.AddWithValue("@Email", txtemail.Text);
+                        command.Parameters.AddWithValue("@Stat", txtstat.Text);
 
                         int result = command.ExecuteNonQuery();
 

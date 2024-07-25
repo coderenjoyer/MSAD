@@ -51,9 +51,9 @@
             groupBox1.Controls.Add(label1);
             groupBox1.Controls.Add(txtpass);
             groupBox1.Controls.Add(txtschID);
-            groupBox1.Location = new Point(758, 145);
+            groupBox1.Location = new Point(678, 136);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(403, 456);
+            groupBox1.Size = new Size(483, 475);
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
             // 
@@ -61,20 +61,20 @@
             // 
             label4.AutoSize = true;
             label4.ForeColor = Color.White;
-            label4.Location = new Point(49, 111);
+            label4.Location = new Point(20, 115);
             label4.Name = "label4";
-            label4.Size = new Size(312, 15);
+            label4.Size = new Size(442, 15);
             label4.TabIndex = 6;
-            label4.Text = "_____________________________________________________________";
+            label4.Text = "_______________________________________________________________________________________";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label3.Font = new Font("Segoe UI Semibold", 32.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.White;
-            label3.Location = new Point(50, 61);
+            label3.Location = new Point(34, 37);
             label3.Name = "label3";
-            label3.Size = new Size(302, 45);
+            label3.Size = new Size(415, 59);
             label3.TabIndex = 5;
             label3.Text = "User Authentication";
             // 
@@ -82,9 +82,10 @@
             // 
             button1.BackColor = Color.Gold;
             button1.FlatStyle = FlatStyle.Flat;
-            button1.Location = new Point(102, 327);
+            button1.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button1.Location = new Point(156, 393);
             button1.Name = "button1";
-            button1.Size = new Size(199, 33);
+            button1.Size = new Size(166, 44);
             button1.TabIndex = 4;
             button1.Text = "Login";
             button1.UseVisualStyleBackColor = false;
@@ -93,38 +94,43 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label2.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(63, 240);
+            label2.Location = new Point(58, 267);
             label2.Name = "label2";
-            label2.Size = new Size(79, 21);
+            label2.Size = new Size(116, 32);
             label2.TabIndex = 3;
             label2.Text = "Password:";
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(63, 172);
+            label1.Location = new Point(58, 166);
             label1.Name = "label1";
-            label1.Size = new Size(141, 21);
+            label1.Size = new Size(216, 32);
             label1.TabIndex = 2;
             label1.Text = "School ID Number:";
             // 
             // txtpass
             // 
-            txtpass.Location = new Point(63, 270);
+            txtpass.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtpass.Location = new Point(58, 314);
             txtpass.Name = "txtpass";
-            txtpass.Size = new Size(268, 23);
+            txtpass.Size = new Size(367, 33);
             txtpass.TabIndex = 1;
+            txtpass.TextAlign = HorizontalAlignment.Center;
+            txtpass.UseSystemPasswordChar = true;
             // 
             // txtschID
             // 
-            txtschID.Location = new Point(63, 204);
+            txtschID.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtschID.Location = new Point(58, 211);
             txtschID.Name = "txtschID";
-            txtschID.Size = new Size(268, 23);
+            txtschID.Size = new Size(367, 33);
             txtschID.TabIndex = 0;
+            txtschID.TextAlign = HorizontalAlignment.Center;
             // 
             // pictureBox1
             // 

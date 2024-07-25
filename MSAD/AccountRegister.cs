@@ -16,15 +16,14 @@ namespace MSAD
             if (InsertIntoAccountsAndProfile())
             {
                 MessageBox.Show("Registration successful!");
+                Flogin flogin = new Flogin();
+                flogin.Show();
+                this.Close();
             }
             else
             {
                 MessageBox.Show("Registration failed.");
             }
-
-            Flogin flogin = new Flogin();
-            flogin.Show();
-            this.Close();
         }
 
 
@@ -33,13 +32,13 @@ namespace MSAD
             string connectionString = "Data Source=tekdoc.database.windows.net;Initial Catalog=TekDoc;User ID=khalil.peque@cit.edu;Password=Miakhally311;Encrypt=True;Authentication=ActiveDirectoryPassword";
 
             string insertAccountQuery = "INSERT INTO [Accs] ([username], [pass]) VALUES (@Username, @Password); SELECT SCOPE_IDENTITY();";
-            string insertProfileQuery = "INSERT INTO [UserProfile] ([account_id], [last_name], [first_name], [mi], [classif], [depart], [prog], [yrlvl], [profi]) VALUES (@AccountId, @LastName, @FirstName, @MI, @Classif, @Depart, @Prog, @YrLvl, @Profi)";
+            string insertProfileQuery = "INSERT INTO [UserProfile] ([account_id], [last_name], [first_name], [middle_name], [classif], [dept], [prog], [yrlvl], [profi]) VALUES (@AccountId, @LastName, @FirstName, @MI, @Classif, @Depart, @Prog, @YrLvl, @Profi)";
 
             
             if (string.IsNullOrWhiteSpace(userID.Text) || string.IsNullOrWhiteSpace(password.Text) ||
                 string.IsNullOrWhiteSpace(lastname.Text) || string.IsNullOrWhiteSpace(firstname.Text) ||
-                string.IsNullOrWhiteSpace(mi.Text) || string.IsNullOrWhiteSpace(classification.Text) ||
-                string.IsNullOrWhiteSpace(department.Text) || string.IsNullOrWhiteSpace(program.Text) ||
+                string.IsNullOrWhiteSpace(mi.Text) || cmbdept.SelectedItem == null ||
+                cmbclassif.SelectedItem == null || string.IsNullOrWhiteSpace(program.Text) ||
                 yearlevel.SelectedItem == null || profile.Image == null)
             {
                 MessageBox.Show("All fields must be filled out.");
@@ -70,8 +69,8 @@ namespace MSAD
                             command.Parameters.AddWithValue("@LastName", lastname.Text);
                             command.Parameters.AddWithValue("@FirstName", firstname.Text);
                             command.Parameters.AddWithValue("@MI", mi.Text);
-                            command.Parameters.AddWithValue("@Classif", classification.Text);
-                            command.Parameters.AddWithValue("@Depart", department.Text);
+                            command.Parameters.AddWithValue("@Classif", cmbclassif.Text);
+                            command.Parameters.AddWithValue("@Depart", cmbdept.SelectedItem.ToString());
                             command.Parameters.AddWithValue("@Prog", program.Text);
                             command.Parameters.AddWithValue("@YrLvl", yearlevel.SelectedItem.ToString());
 

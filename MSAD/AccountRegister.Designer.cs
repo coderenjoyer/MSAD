@@ -41,9 +41,7 @@
             firstname = new TextBox();
             mi = new TextBox();
             label6 = new Label();
-            classification = new TextBox();
             label7 = new Label();
-            department = new TextBox();
             label8 = new Label();
             regButton = new Button();
             panel3 = new Panel();
@@ -57,6 +55,8 @@
             panel2 = new Panel();
             label9 = new Label();
             panel1 = new Panel();
+            cmbclassif = new ComboBox();
+            cmbdept = new ComboBox();
             ((System.ComponentModel.ISupportInitialize)profile).BeginInit();
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -194,14 +194,6 @@
             label6.TabIndex = 18;
             label6.Text = "M.I*";
             // 
-            // classification
-            // 
-            classification.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            classification.Location = new Point(385, 512);
-            classification.Name = "classification";
-            classification.Size = new Size(512, 33);
-            classification.TabIndex = 19;
-            // 
             // label7
             // 
             label7.AutoSize = true;
@@ -212,14 +204,6 @@
             label7.Size = new Size(131, 25);
             label7.TabIndex = 20;
             label7.Text = "Classification*";
-            // 
-            // department
-            // 
-            department.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            department.Location = new Point(998, 512);
-            department.Name = "department";
-            department.Size = new Size(512, 33);
-            department.TabIndex = 21;
             // 
             // label8
             // 
@@ -360,11 +344,33 @@
             panel1.Size = new Size(1885, 55);
             panel1.TabIndex = 5;
             // 
+            // cmbclassif
+            // 
+            cmbclassif.Font = new Font("Segoe UI", 14.25F);
+            cmbclassif.FormattingEnabled = true;
+            cmbclassif.Items.AddRange(new object[] { "Student", "Graduate" });
+            cmbclassif.Location = new Point(385, 521);
+            cmbclassif.Name = "cmbclassif";
+            cmbclassif.Size = new Size(512, 33);
+            cmbclassif.TabIndex = 35;
+            // 
+            // cmbdept
+            // 
+            cmbdept.Font = new Font("Segoe UI", 14.25F);
+            cmbdept.FormattingEnabled = true;
+            cmbdept.Items.AddRange(new object[] { "CEA", "CASE", "CMBA", "CNAS", "COLLEGE OF CRIMINAL JUSTICE", "COLLEGE OF COMPUTER STUDIES" });
+            cmbdept.Location = new Point(997, 521);
+            cmbdept.Name = "cmbdept";
+            cmbdept.Size = new Size(512, 33);
+            cmbdept.TabIndex = 36;
+            // 
             // AccountRegister
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1885, 785);
+            Controls.Add(cmbdept);
+            Controls.Add(cmbclassif);
             Controls.Add(label12);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
@@ -375,9 +381,7 @@
             Controls.Add(panel3);
             Controls.Add(regButton);
             Controls.Add(label8);
-            Controls.Add(department);
             Controls.Add(label7);
-            Controls.Add(classification);
             Controls.Add(label6);
             Controls.Add(mi);
             Controls.Add(firstname);
@@ -419,9 +423,7 @@
         private TextBox firstname;
         private TextBox mi;
         private Label label6;
-        private TextBox classification;
         private Label label7;
-        private TextBox department;
         private Label label8;
         private Button regButton;
         private Panel panel3;
@@ -435,5 +437,7 @@
         private Panel panel2;
         private Label label9;
         private Panel panel1;
+        private ComboBox cmbclassif;
+        private ComboBox cmbdept;
     }
 }
