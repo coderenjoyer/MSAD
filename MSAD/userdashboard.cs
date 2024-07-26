@@ -98,6 +98,7 @@ namespace MSAD
                         if (result > 0)
                         {
                             MessageBox.Show("Document request submitted successfully.");
+                            ClearFormFields();
                         }
                         else
                         {
@@ -174,6 +175,19 @@ namespace MSAD
             {
                 MessageBox.Show("An error occurred while cancelling the document request: " + ex.Message);
             }
+        }
+
+        private void label27_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ClearFormFields()
+        {
+            cmbdocutype.SelectedIndex = -1;
+            txtreason.Clear();
+            txtemail.Clear();
+            txtstat.Clear();
         }
     }
 }

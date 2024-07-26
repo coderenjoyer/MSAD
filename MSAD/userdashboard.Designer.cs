@@ -72,6 +72,7 @@
             label15 = new Label();
             label14 = new Label();
             cmbdocutype = new ComboBox();
+            label27 = new Label();
             groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)profile).BeginInit();
             groupBox2.SuspendLayout();
@@ -279,13 +280,14 @@
             groupBox2.Controls.Add(label4);
             groupBox2.Controls.Add(label3);
             groupBox2.Controls.Add(label2);
+            groupBox2.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             groupBox2.ForeColor = Color.White;
             groupBox2.Location = new Point(515, 108);
             groupBox2.Name = "groupBox2";
             groupBox2.Size = new Size(1340, 256);
             groupBox2.TabIndex = 2;
             groupBox2.TabStop = false;
-            groupBox2.Text = "Available Documents";
+            groupBox2.Text = "Available Documents and Prices";
             groupBox2.Enter += groupBox2_Enter;
             // 
             // label26
@@ -313,99 +315,99 @@
             label13.AutoSize = true;
             label13.Font = new Font("Palatino Linotype", 14.25F);
             label13.ImageAlign = ContentAlignment.MiddleLeft;
-            label13.Location = new Point(1039, 191);
+            label13.Location = new Point(1027, 191);
             label13.Name = "label13";
-            label13.Size = new Size(158, 26);
+            label13.Size = new Size(213, 26);
             label13.TabIndex = 11;
-            label13.Text = "Mailing Expenses";
+            label13.Text = "Mailing Expenses: 51.66";
             // 
             // label12
             // 
             label12.AutoSize = true;
             label12.Font = new Font("Palatino Linotype", 14.25F);
             label12.ImageAlign = ContentAlignment.MiddleLeft;
-            label12.Location = new Point(1039, 46);
+            label12.Location = new Point(1024, 46);
             label12.Name = "label12";
-            label12.Size = new Size(198, 26);
+            label12.Size = new Size(253, 26);
             label12.TabIndex = 10;
-            label12.Text = "Documentary Stamp/s";
+            label12.Text = "Documentary Stamp/s: 57.99";
             // 
             // label11
             // 
             label11.AutoSize = true;
             label11.Font = new Font("Palatino Linotype", 14.25F);
             label11.ImageAlign = ContentAlignment.MiddleLeft;
-            label11.Location = new Point(1039, 118);
+            label11.Location = new Point(1024, 118);
             label11.Name = "label11";
-            label11.Size = new Size(255, 26);
+            label11.Size = new Size(310, 26);
             label11.TabIndex = 9;
-            label11.Text = "CAV / Red Ribbon / Apostille";
+            label11.Text = "CAV / Red Ribbon / Apostille: 56.88";
             // 
             // label10
             // 
             label10.AutoSize = true;
             label10.Font = new Font("Palatino Linotype", 14.25F);
             label10.ImageAlign = ContentAlignment.MiddleLeft;
-            label10.Location = new Point(722, 191);
+            label10.Location = new Point(743, 191);
             label10.Name = "label10";
-            label10.Size = new Size(167, 26);
+            label10.Size = new Size(222, 26);
             label10.TabIndex = 8;
-            label10.Text = "Accreditation form";
+            label10.Text = "Accreditation form: 85.42";
             // 
             // label9
             // 
             label9.AutoSize = true;
             label9.Font = new Font("Palatino Linotype", 14.25F);
             label9.ImageAlign = ContentAlignment.MiddleLeft;
-            label9.Location = new Point(724, 118);
+            label9.Location = new Point(743, 118);
             label9.Name = "label9";
-            label9.Size = new Size(182, 26);
+            label9.Size = new Size(237, 26);
             label9.TabIndex = 7;
-            label9.Text = "Grades / Study Load";
+            label9.Text = "Grades / Study Load: 51.66";
             // 
             // label8
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Palatino Linotype", 14.25F);
             label8.ImageAlign = ContentAlignment.MiddleLeft;
-            label8.Location = new Point(724, 46);
+            label8.Location = new Point(743, 46);
             label8.Name = "label8";
-            label8.Size = new Size(101, 26);
+            label8.Size = new Size(156, 26);
             label8.TabIndex = 6;
-            label8.Text = "Photocopy";
+            label8.Text = "Photocopy: 20.88";
             // 
             // label7
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Palatino Linotype", 14.25F);
             label7.ImageAlign = ContentAlignment.MiddleLeft;
-            label7.Location = new Point(459, 118);
+            label7.Location = new Point(480, 118);
             label7.Name = "label7";
-            label7.Size = new Size(50, 26);
+            label7.Size = new Size(110, 26);
             label7.TabIndex = 5;
-            label7.Text = "Scan";
+            label7.Text = "Scan:  20.88";
             // 
             // label6
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Palatino Linotype", 14.25F);
             label6.ImageAlign = ContentAlignment.MiddleLeft;
-            label6.Location = new Point(459, 46);
+            label6.Location = new Point(480, 46);
             label6.Name = "label6";
-            label6.Size = new Size(176, 26);
+            label6.Size = new Size(231, 26);
             label6.TabIndex = 4;
-            label6.Text = "Certified True Copy";
+            label6.Text = "Certified True Copy: 51.66";
             // 
             // label5
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Palatino Linotype", 14.25F);
             label5.ImageAlign = ContentAlignment.MiddleLeft;
-            label5.Location = new Point(459, 191);
+            label5.Location = new Point(480, 191);
             label5.Name = "label5";
-            label5.Size = new Size(189, 26);
+            label5.Size = new Size(254, 26);
             label5.TabIndex = 3;
-            label5.Text = "Transcript of Records";
+            label5.Text = "Transcript of Records: 103.49";
             // 
             // label4
             // 
@@ -414,9 +416,9 @@
             label4.ImageAlign = ContentAlignment.MiddleLeft;
             label4.Location = new Point(47, 191);
             label4.Name = "label4";
-            label4.Size = new Size(84, 26);
+            label4.Size = new Size(164, 26);
             label4.TabIndex = 2;
-            label4.Text = "Diploma";
+            label4.Text = "Diploma: 1,071.78";
             // 
             // label3
             // 
@@ -425,9 +427,9 @@
             label3.ImageAlign = ContentAlignment.MiddleLeft;
             label3.Location = new Point(47, 118);
             label3.Name = "label3";
-            label3.Size = new Size(369, 26);
+            label3.Size = new Size(424, 26);
             label3.TabIndex = 1;
-            label3.Text = "Honorable Dismissal/Certificate of Transfer";
+            label3.Text = "Honorable Dismissal/Certificate of Transfer: 51.66";
             // 
             // label2
             // 
@@ -436,9 +438,9 @@
             label2.ImageAlign = ContentAlignment.MiddleLeft;
             label2.Location = new Point(47, 46);
             label2.Name = "label2";
-            label2.Size = new Size(354, 26);
+            label2.Size = new Size(409, 26);
             label2.TabIndex = 0;
-            label2.Text = "Certification [GMC/ENGL/GRAD/ENRL]";
+            label2.Text = "Certification [GMC/ENGL/GRAD/ENRL]: 51.66";
             // 
             // groupBox3
             // 
@@ -452,6 +454,7 @@
             groupBox3.Controls.Add(label15);
             groupBox3.Controls.Add(label14);
             groupBox3.Controls.Add(cmbdocutype);
+            groupBox3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             groupBox3.ForeColor = Color.White;
             groupBox3.Location = new Point(515, 387);
             groupBox3.Name = "groupBox3";
@@ -476,9 +479,9 @@
             // 
             // txtstat
             // 
-            txtstat.Location = new Point(937, 89);
+            txtstat.Location = new Point(934, 84);
             txtstat.Name = "txtstat";
-            txtstat.Size = new Size(360, 23);
+            txtstat.Size = new Size(360, 29);
             txtstat.TabIndex = 8;
             txtstat.Text = "Pending";
             txtstat.Visible = false;
@@ -487,7 +490,7 @@
             // 
             label17.AutoSize = true;
             label17.Font = new Font("Palatino Linotype", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label17.Location = new Point(705, 57);
+            label17.Location = new Point(702, 52);
             label17.Name = "label17";
             label17.Size = new Size(178, 26);
             label17.TabIndex = 7;
@@ -496,7 +499,7 @@
             // txtemail
             // 
             txtemail.Font = new Font("Palatino Linotype", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtemail.Location = new Point(937, 50);
+            txtemail.Location = new Point(934, 45);
             txtemail.Name = "txtemail";
             txtemail.Size = new Size(360, 33);
             txtemail.TabIndex = 6;
@@ -505,7 +508,7 @@
             // 
             label16.AutoSize = true;
             label16.Font = new Font("Palatino Linotype", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label16.Location = new Point(729, 172);
+            label16.Location = new Point(721, 123);
             label16.Name = "label16";
             label16.Size = new Size(573, 26);
             label16.TabIndex = 5;
@@ -564,12 +567,25 @@
             cmbdocutype.Size = new Size(366, 34);
             cmbdocutype.TabIndex = 0;
             // 
+            // label27
+            // 
+            label27.AutoSize = true;
+            label27.Font = new Font("Palatino Linotype", 14.25F);
+            label27.ImageAlign = ContentAlignment.MiddleLeft;
+            label27.Location = new Point(515, 9);
+            label27.Name = "label27";
+            label27.Size = new Size(267, 26);
+            label27.TabIndex = 14;
+            label27.Text = "Cerificate of Enrollment : 51.66";
+            label27.Click += label27_Click;
+            // 
             // userdashboard
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Maroon;
             ClientSize = new Size(1919, 830);
+            Controls.Add(label27);
             Controls.Add(groupBox3);
             Controls.Add(groupBox2);
             Controls.Add(groupBox1);
@@ -634,5 +650,6 @@
         private Label label26;
         private TextBox txtstat;
         private Button btncancel;
+        private Label label27;
     }
 }

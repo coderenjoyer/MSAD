@@ -47,27 +47,32 @@
             // 
             // lbl2
             // 
-            lbl2.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lbl2.Location = new Point(59, 34);
+            lbl2.Font = new Font("Palatino Linotype", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbl2.ForeColor = Color.Gold;
+            lbl2.Location = new Point(59, 31);
             lbl2.Name = "lbl2";
-            lbl2.Size = new Size(90, 39);
+            lbl2.Size = new Size(125, 51);
             lbl2.TabIndex = 20;
             lbl2.Text = "Users";
             // 
             // btndelete
             // 
+            btndelete.BackColor = Color.Gold;
+            btndelete.FlatStyle = FlatStyle.Flat;
+            btndelete.Font = new Font("Sitka Small", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btndelete.Location = new Point(701, 786);
             btndelete.Name = "btndelete";
-            btndelete.Size = new Size(125, 32);
+            btndelete.Size = new Size(125, 35);
             btndelete.TabIndex = 21;
             btndelete.Text = "Delete";
-            btndelete.UseVisualStyleBackColor = true;
+            btndelete.UseVisualStyleBackColor = false;
             btndelete.Click += btndelete_Click;
             // 
             // pnlUsers
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.Maroon;
             Controls.Add(btndelete);
             Controls.Add(lbl2);
             Controls.Add(dgvusers);

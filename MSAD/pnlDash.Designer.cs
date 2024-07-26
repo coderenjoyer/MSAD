@@ -59,98 +59,109 @@
             // 
             // label15
             // 
-            label15.Font = new Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label15.Location = new Point(691, 367);
+            label15.Font = new Font("Palatino Linotype", 20.25F);
+            label15.ForeColor = Color.White;
+            label15.Location = new Point(830, 498);
             label15.Name = "label15";
-            label15.Size = new Size(533, 31);
+            label15.Size = new Size(364, 56);
             label15.TabIndex = 29;
             label15.Text = "Mailing Express:";
             // 
             // label14
             // 
-            label14.Font = new Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label14.Location = new Point(36, 370);
+            label14.Font = new Font("Palatino Linotype", 20.25F);
+            label14.ForeColor = Color.White;
+            label14.Location = new Point(53, 460);
             label14.Name = "label14";
-            label14.Size = new Size(533, 31);
+            label14.Size = new Size(533, 56);
             label14.TabIndex = 28;
             label14.Text = "Accereditation Form / Completion Form: ";
             // 
             // label9
             // 
-            label9.Font = new Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label9.Location = new Point(36, 614);
+            label9.Font = new Font("Palatino Linotype", 20.25F);
+            label9.ForeColor = Color.White;
+            label9.Location = new Point(53, 600);
             label9.Name = "label9";
-            label9.Size = new Size(533, 31);
+            label9.Size = new Size(533, 50);
             label9.TabIndex = 27;
             label9.Text = "Documentary Stamp/s:";
             // 
             // label11
             // 
-            label11.Font = new Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label11.Location = new Point(691, 484);
+            label11.Font = new Font("Palatino Linotype", 20.25F);
+            label11.ForeColor = Color.White;
+            label11.Location = new Point(830, 568);
             label11.Name = "label11";
-            label11.Size = new Size(533, 31);
+            label11.Size = new Size(427, 43);
             label11.TabIndex = 25;
             label11.Text = "C.A.V / Red Ribbon /  Apostille:";
             // 
             // label12
             // 
-            label12.Font = new Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label12.Location = new Point(26, 487);
+            label12.Font = new Font("Palatino Linotype", 20.25F);
+            label12.ForeColor = Color.White;
+            label12.Location = new Point(53, 530);
             label12.Name = "label12";
-            label12.Size = new Size(533, 31);
+            label12.Size = new Size(533, 54);
             label12.TabIndex = 24;
             label12.Text = "Grade / Study Loads:";
             // 
             // label13
             // 
-            label13.Font = new Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label13.Location = new Point(691, 272);
+            label13.Font = new Font("Palatino Linotype", 20.25F);
+            label13.ForeColor = Color.White;
+            label13.Location = new Point(830, 428);
             label13.Name = "label13";
-            label13.Size = new Size(351, 31);
+            label13.Size = new Size(311, 41);
             label13.TabIndex = 23;
             label13.Text = "Photocopy:";
             // 
             // label8
             // 
-            label8.Font = new Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label8.Location = new Point(691, 196);
+            label8.Font = new Font("Palatino Linotype", 20.25F);
+            label8.ForeColor = Color.White;
+            label8.Location = new Point(830, 358);
             label8.Name = "label8";
-            label8.Size = new Size(533, 31);
+            label8.Size = new Size(406, 31);
             label8.TabIndex = 22;
             label8.Text = "Scan:";
             // 
             // label7
             // 
-            label7.Font = new Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label7.Location = new Point(691, 113);
+            label7.Font = new Font("Palatino Linotype", 20.25F);
+            label7.ForeColor = Color.White;
+            label7.Location = new Point(830, 288);
             label7.Name = "label7";
-            label7.Size = new Size(533, 31);
+            label7.Size = new Size(351, 55);
             label7.TabIndex = 21;
             label7.Text = "Transcript of Records:";
             // 
             // label6
             // 
-            label6.Font = new Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.Location = new Point(36, 275);
+            label6.Font = new Font("Palatino Linotype", 20.25F);
+            label6.ForeColor = Color.White;
+            label6.Location = new Point(53, 390);
             label6.Name = "label6";
-            label6.Size = new Size(533, 31);
+            label6.Size = new Size(533, 41);
             label6.TabIndex = 20;
             label6.Text = "Diploma:";
             // 
             // label5
             // 
-            label5.Font = new Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.Location = new Point(36, 199);
+            label5.Font = new Font("Palatino Linotype", 20.25F);
+            label5.ForeColor = Color.White;
+            label5.Location = new Point(53, 320);
             label5.Name = "label5";
-            label5.Size = new Size(533, 31);
+            label5.Size = new Size(672, 31);
             label5.TabIndex = 19;
             label5.Text = "Honorable Dismissal/Certificate of Transfer Credentials:";
             // 
             // label4
             // 
-            label4.Font = new Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.Location = new Point(36, 113);
+            label4.Font = new Font("Palatino Linotype", 20.25F);
+            label4.ForeColor = Color.White;
+            label4.Location = new Point(53, 250);
             label4.Name = "label4";
             label4.Size = new Size(351, 31);
             label4.TabIndex = 18;
@@ -158,26 +169,28 @@
             // 
             // label1
             // 
-            label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(36, 40);
+            label1.Font = new Font("Calisto MT", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.Gold;
+            label1.Location = new Point(53, 58);
             label1.Name = "label1";
-            label1.Size = new Size(351, 34);
+            label1.Size = new Size(504, 65);
             label1.TabIndex = 17;
             label1.Text = "Document Type Requested";
             // 
             // lblReq
             // 
-            lblReq.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblReq.Location = new Point(1311, 72);
+            lblReq.Font = new Font("Palatino Linotype", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblReq.ForeColor = Color.Gold;
+            lblReq.Location = new Point(1325, 58);
             lblReq.Name = "lblReq";
-            lblReq.Size = new Size(129, 33);
+            lblReq.Size = new Size(201, 54);
             lblReq.TabIndex = 16;
             lblReq.Text = "Request:";
             // 
             // dgvReq
             // 
             dgvReq.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvReq.Location = new Point(1311, 128);
+            dgvReq.Location = new Point(1325, 114);
             dgvReq.Margin = new Padding(3, 2, 3, 2);
             dgvReq.Name = "dgvReq";
             dgvReq.RowHeadersWidth = 51;
@@ -193,99 +206,121 @@
             // 
             // lblcert
             // 
-            lblcert.Location = new Point(155, 116);
+            lblcert.Font = new Font("Palatino Linotype", 20.25F);
+            lblcert.ForeColor = Color.White;
+            lblcert.Location = new Point(214, 243);
             lblcert.Name = "lblcert";
-            lblcert.Size = new Size(77, 23);
+            lblcert.Size = new Size(150, 50);
             lblcert.TabIndex = 30;
             lblcert.Text = "label2";
             lblcert.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // lblhondis
             // 
-            lblhondis.Location = new Point(519, 203);
+            lblhondis.Font = new Font("Palatino Linotype", 20.25F);
+            lblhondis.ForeColor = Color.White;
+            lblhondis.Location = new Point(716, 316);
             lblhondis.Name = "lblhondis";
-            lblhondis.Size = new Size(77, 23);
+            lblhondis.Size = new Size(108, 44);
             lblhondis.TabIndex = 31;
             lblhondis.Text = "label3";
             lblhondis.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // lbldip
             // 
-            lbldip.Location = new Point(122, 279);
+            lbldip.Font = new Font("Palatino Linotype", 20.25F);
+            lbldip.ForeColor = Color.White;
+            lbldip.Location = new Point(177, 387);
             lbldip.Name = "lbldip";
-            lbldip.Size = new Size(77, 23);
+            lbldip.Size = new Size(112, 43);
             lbldip.TabIndex = 32;
             lbldip.Text = "label16";
             lbldip.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // lbltrans
             // 
-            lbltrans.Location = new Point(881, 117);
+            lbltrans.Font = new Font("Palatino Linotype", 20.25F);
+            lbltrans.ForeColor = Color.White;
+            lbltrans.Location = new Point(1104, 288);
             lbltrans.Name = "lbltrans";
-            lbltrans.Size = new Size(77, 23);
+            lbltrans.Size = new Size(119, 35);
             lbltrans.TabIndex = 33;
             lbltrans.Text = "label17";
             lbltrans.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // lblscan
             // 
-            lblscan.Location = new Point(745, 200);
+            lblscan.Font = new Font("Palatino Linotype", 20.25F);
+            lblscan.ForeColor = Color.White;
+            lblscan.Location = new Point(903, 354);
             lblscan.Name = "lblscan";
-            lblscan.Size = new Size(77, 23);
+            lblscan.Size = new Size(117, 45);
             lblscan.TabIndex = 34;
             lblscan.Text = "label18";
             lblscan.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // lblphoto
             // 
-            lblphoto.Location = new Point(798, 276);
+            lblphoto.Font = new Font("Palatino Linotype", 20.25F);
+            lblphoto.ForeColor = Color.White;
+            lblphoto.Location = new Point(973, 424);
             lblphoto.Name = "lblphoto";
-            lblphoto.Size = new Size(77, 23);
+            lblphoto.Size = new Size(120, 45);
             lblphoto.TabIndex = 35;
             lblphoto.Text = "label19";
             lblphoto.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // lblgrade
             // 
-            lblgrade.Location = new Point(212, 491);
+            lblgrade.Font = new Font("Palatino Linotype", 20.25F);
+            lblgrade.ForeColor = Color.White;
+            lblgrade.Location = new Point(319, 527);
             lblgrade.Name = "lblgrade";
-            lblgrade.Size = new Size(77, 23);
+            lblgrade.Size = new Size(107, 43);
             lblgrade.TabIndex = 36;
             lblgrade.Text = "label20";
             lblgrade.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // lblcav
             // 
-            lblcav.Location = new Point(965, 488);
+            lblcav.Font = new Font("Palatino Linotype", 20.25F);
+            lblcav.ForeColor = Color.White;
+            lblcav.Location = new Point(1211, 562);
             lblcav.Name = "lblcav";
-            lblcav.Size = new Size(77, 23);
+            lblcav.Size = new Size(105, 49);
             lblcav.TabIndex = 37;
             lblcav.Text = "label21";
             lblcav.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // lbldoc
             // 
-            lbldoc.Location = new Point(241, 618);
+            lbldoc.Font = new Font("Palatino Linotype", 20.25F);
+            lbldoc.ForeColor = Color.White;
+            lbldoc.Location = new Point(334, 597);
             lbldoc.Name = "lbldoc";
-            lbldoc.Size = new Size(77, 23);
+            lbldoc.Size = new Size(126, 42);
             lbldoc.TabIndex = 38;
             lbldoc.Text = "label22";
             lbldoc.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // lblaccre
             // 
-            lblaccre.Location = new Point(390, 374);
+            lblaccre.Font = new Font("Palatino Linotype", 20.25F);
+            lblaccre.ForeColor = Color.White;
+            lblaccre.Location = new Point(541, 460);
             lblaccre.Name = "lblaccre";
-            lblaccre.Size = new Size(77, 23);
+            lblaccre.Size = new Size(108, 36);
             lblaccre.TabIndex = 39;
             lblaccre.Text = "label23";
             lblaccre.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // lblmail
             // 
-            lblmail.Location = new Point(836, 371);
+            lblmail.Font = new Font("Palatino Linotype", 20.25F);
+            lblmail.ForeColor = Color.White;
+            lblmail.Location = new Point(1039, 495);
             lblmail.Name = "lblmail";
-            lblmail.Size = new Size(77, 23);
+            lblmail.Size = new Size(102, 43);
             lblmail.TabIndex = 40;
             lblmail.Text = "label24";
             lblmail.TextAlign = ContentAlignment.MiddleLeft;
@@ -294,6 +329,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.Maroon;
             Controls.Add(lblmail);
             Controls.Add(lblaccre);
             Controls.Add(lbldoc);
@@ -321,7 +357,7 @@
             Controls.Add(dgvReq);
             Margin = new Padding(3, 2, 3, 2);
             Name = "pnlDash";
-            Size = new Size(1904, 846);
+            Size = new Size(1919, 830);
             Load += pnlDash_Load;
             ((System.ComponentModel.ISupportInitialize)dgvReq).EndInit();
             ResumeLayout(false);

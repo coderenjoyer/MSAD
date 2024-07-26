@@ -61,21 +61,22 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new Font("Arial Narrow", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(198, 97);
+            label3.Font = new Font("MS Reference Sans Serif", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label3.Location = new Point(228, 106);
             label3.Name = "label3";
-            label3.Size = new Size(193, 23);
-            label3.TabIndex = 7;
+            label3.Size = new Size(243, 24);
+            label3.TabIndex = 9;
             label3.Text = "Document Retrieval Hub";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Arial Rounded MT Bold", 55.8000031F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.Location = new Point(169, 15);
+            label2.Font = new Font("Pristina", 69.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.ForeColor = Color.Maroon;
+            label2.Location = new Point(195, 15);
             label2.Name = "label2";
-            label2.Size = new Size(316, 87);
-            label2.TabIndex = 6;
+            label2.Size = new Size(302, 122);
+            label2.TabIndex = 8;
             label2.Text = "TekDok";
             // 
             // pictureBox1
@@ -91,7 +92,8 @@
             // 
             // pnlNavBar
             // 
-            pnlNavBar.BackColor = Color.Maroon;
+            pnlNavBar.BackColor = Color.Gold;
+            pnlNavBar.BorderStyle = BorderStyle.FixedSingle;
             pnlNavBar.Controls.Add(btnUsers);
             pnlNavBar.Controls.Add(btnLogout);
             pnlNavBar.Controls.Add(btnHistory);
@@ -106,14 +108,15 @@
             // 
             // btnUsers
             // 
-            btnUsers.BackColor = SystemColors.Control;
+            btnUsers.BackColor = Color.Maroon;
             btnUsers.Dock = DockStyle.Left;
             btnUsers.FlatStyle = FlatStyle.Flat;
-            btnUsers.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnUsers.Location = new Point(714, 0);
+            btnUsers.Font = new Font("Sitka Small", 14.25F);
+            btnUsers.ForeColor = Color.White;
+            btnUsers.Location = new Point(709, 0);
             btnUsers.Margin = new Padding(3, 2, 3, 2);
             btnUsers.Name = "btnUsers";
-            btnUsers.Size = new Size(238, 45);
+            btnUsers.Size = new Size(238, 43);
             btnUsers.TabIndex = 4;
             btnUsers.Text = "Users";
             btnUsers.UseVisualStyleBackColor = false;
@@ -121,27 +124,31 @@
             // 
             // btnLogout
             // 
+            btnLogout.BackColor = Color.Maroon;
             btnLogout.Dock = DockStyle.Right;
-            btnLogout.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnLogout.Location = new Point(1666, 0);
+            btnLogout.FlatStyle = FlatStyle.Flat;
+            btnLogout.Font = new Font("Sitka Small", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnLogout.ForeColor = Color.White;
+            btnLogout.Location = new Point(1664, 0);
             btnLogout.Margin = new Padding(3, 2, 3, 2);
             btnLogout.Name = "btnLogout";
-            btnLogout.Size = new Size(238, 45);
+            btnLogout.Size = new Size(238, 43);
             btnLogout.TabIndex = 3;
             btnLogout.Text = "Logout";
-            btnLogout.UseVisualStyleBackColor = true;
+            btnLogout.UseVisualStyleBackColor = false;
             btnLogout.Click += btnLogout_Click;
             // 
             // btnHistory
             // 
-            btnHistory.BackColor = SystemColors.Control;
+            btnHistory.BackColor = Color.Maroon;
             btnHistory.Dock = DockStyle.Left;
             btnHistory.FlatStyle = FlatStyle.Flat;
-            btnHistory.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnHistory.Location = new Point(476, 0);
+            btnHistory.Font = new Font("Sitka Small", 14.25F);
+            btnHistory.ForeColor = Color.White;
+            btnHistory.Location = new Point(471, 0);
             btnHistory.Margin = new Padding(3, 2, 3, 2);
             btnHistory.Name = "btnHistory";
-            btnHistory.Size = new Size(238, 45);
+            btnHistory.Size = new Size(238, 43);
             btnHistory.TabIndex = 2;
             btnHistory.Text = "History";
             btnHistory.UseVisualStyleBackColor = false;
@@ -149,14 +156,15 @@
             // 
             // btnVerification
             // 
-            btnVerification.BackColor = SystemColors.Control;
+            btnVerification.BackColor = Color.Maroon;
             btnVerification.Dock = DockStyle.Left;
             btnVerification.FlatStyle = FlatStyle.Flat;
-            btnVerification.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnVerification.Location = new Point(238, 0);
+            btnVerification.Font = new Font("Sitka Small", 14.25F);
+            btnVerification.ForeColor = Color.White;
+            btnVerification.Location = new Point(245, 0);
             btnVerification.Margin = new Padding(3, 2, 3, 2);
             btnVerification.Name = "btnVerification";
-            btnVerification.Size = new Size(238, 45);
+            btnVerification.Size = new Size(226, 43);
             btnVerification.TabIndex = 1;
             btnVerification.Text = "Verification";
             btnVerification.UseVisualStyleBackColor = false;
@@ -164,14 +172,15 @@
             // 
             // btnDash
             // 
-            btnDash.BackColor = SystemColors.Control;
+            btnDash.BackColor = Color.Maroon;
             btnDash.Dock = DockStyle.Left;
             btnDash.FlatStyle = FlatStyle.Flat;
-            btnDash.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnDash.Font = new Font("Sitka Small", 14.25F);
+            btnDash.ForeColor = Color.White;
             btnDash.Location = new Point(0, 0);
             btnDash.Margin = new Padding(3, 2, 3, 2);
             btnDash.Name = "btnDash";
-            btnDash.Size = new Size(238, 45);
+            btnDash.Size = new Size(245, 43);
             btnDash.TabIndex = 0;
             btnDash.Text = "Dashboard";
             btnDash.UseVisualStyleBackColor = false;
@@ -220,8 +229,6 @@
         private Panel pblHeader;
         private Panel pnlNavBar;
         private PictureBox pictureBox1;
-        private Label label3;
-        private Label label2;
         private Button btnDash;
         private Button btnHistory;
         private Button btnVerification;
@@ -245,5 +252,7 @@
         private Label label6;
         private Button btnUsers;
         private Microsoft.Data.SqlClient.SqlCommand sqlCommand2;
+        private Label label3;
+        private Label label2;
     }
 }

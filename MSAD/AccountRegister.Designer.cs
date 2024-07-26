@@ -190,9 +190,9 @@
             label6.ForeColor = SystemColors.ActiveCaptionText;
             label6.Location = new Point(998, 409);
             label6.Name = "label6";
-            label6.Size = new Size(46, 25);
+            label6.Size = new Size(126, 25);
             label6.TabIndex = 18;
-            label6.Text = "M.I*";
+            label6.Text = "Middlename*";
             // 
             // label7
             // 

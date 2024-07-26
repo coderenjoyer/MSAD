@@ -35,14 +35,12 @@ namespace MSAD
 
         private void Admin_Load(object sender, EventArgs e)
         {
-            btnDash.BackColor = Color.Gold;
             mainPanel.Controls.Add(pnlDash);
         }
 
         private void btnDash_Click(object sender, EventArgs e)
         {
-            btnClearColor();
-            btnDash.BackColor = Color.Gold;
+            
 
 
             mainPanel.Controls.Clear();
@@ -51,8 +49,6 @@ namespace MSAD
 
         private void btnVerification_Click(object sender, EventArgs e)
         {
-            btnClearColor();
-            btnVerification.BackColor = Color.Gold;
 
             mainPanel.Controls.Clear();
             mainPanel.Controls.Add(pnlVerification);
@@ -60,11 +56,9 @@ namespace MSAD
 
         private void btnHistory_Click(object sender, EventArgs e)
         {
-            btnClearColor();
-            btnHistory.BackColor = Color.Gold;
 
             mainPanel.Controls.Clear();
-            mainPanel.Controls.Add(pnlHistory);
+            mainPanel.Controls.Add(pnlHistory); 
         }
 
 
@@ -91,8 +85,7 @@ namespace MSAD
 
         private void btnUsers_Click(object sender, EventArgs e)
         {
-            btnClearColor();
-            btnUsers.BackColor = Color.Gold;
+           
 
             mainPanel.Controls.Clear();
             mainPanel.Controls.Add(pnlUsers);

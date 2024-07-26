@@ -120,6 +120,11 @@
   <metadata name="sqlCommand1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <data name="txtmsg.Text" xml:space="preserve">
+    <value>Request Approved/Rejected, 
+
+You may claim you requested document on xx/xx/xx. You can pay at the accounting office or pay online through https://cituonlinepayment.powerappsportals.com/Payment-Portal/.</value>
+  </data>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>65</value>
   </metadata>

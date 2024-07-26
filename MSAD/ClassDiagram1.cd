@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MSAD.Properties.Resources" Collapsed="true">
+    <Position X="10.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAARAAAAAAAAAAAAAABERAAAQAAAAAAAQAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MSAD.AccountRegister" Collapsed="true">
+    <Position X="5.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>cAAAIAgAAihQABACCAKAAAQCAAgAMAAAiIAAAxBAAAE=</HashCode>
+      <FileName>AccountRegister.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MSAD.Admin" Collapsed="true">
+    <Position X="7" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>8wAgIAAgACAgAFAQAACAAAACAQAEAAAAAAAgACBAAAg=</HashCode>
+      <FileName>Admin.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MSAD.Docstat" Collapsed="true">
+    <Position X="8.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACACARAAAACAFAgCgAAAAIAAACAGAAABAAI=</HashCode>
+      <FileName>Docstat.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MSAD.Flogin" Collapsed="true">
+    <Position X="10.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAQAACAAABAAAACAIAACAAAAAAKQEgAAAQBAgEA=</HashCode>
+      <FileName>Flogin.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MSAD.Home" Collapsed="true">
+    <Position X="5.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAACAAAAAAAACAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Home.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MSAD.pnlDash" Collapsed="true">
+    <Position X="7" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>8wEAAAAgACAgBVABAACoBEACAAAAAAIAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MSAD.pnlHistory" Collapsed="true">
+    <Position X="8.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAARAAAACAAAACAAAIAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MSAD.pnlUsers" Collapsed="true">
+    <Position X="10.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAABAAACAAAACAQAAAAAAAAAABAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MSAD.pnlVerification" Collapsed="true">
+    <Position X="5.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAiADAAABAAAACAAAgCgAAgAAAAAAAgQAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MSAD.Program" Collapsed="true">
+    <Position X="7" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MSAD.Request" Collapsed="true">
+    <Position X="8.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Request.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MSAD.signin" Collapsed="true">
+    <Position X="5.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAACAAIBAAAACAAAACAAAIAAAAAWAAAABAAAA=</HashCode>
+      <FileName>Signin.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MSAD.userdashboard" Collapsed="true">
+    <Position X="7" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>/wAAAAAAQSAEABAAAAiAEAgCgAAAEAAgSCAAAoAAADA=</HashCode>
+      <FileName>userdashboard.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MSAD.UserHome" Collapsed="true">
+    <Position X="8.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACACQBAAAAGAIAACAAACACAQIAgAAQFAgAA=</HashCode>
+      <FileName>UserHome.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
