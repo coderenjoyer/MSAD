@@ -30,6 +30,7 @@
         {
             dgvusers = new DataGridView();
             lbl2 = new Label();
+            btndelete = new Button();
             ((System.ComponentModel.ISupportInitialize)dgvusers).BeginInit();
             SuspendLayout();
             // 
@@ -53,10 +54,21 @@
             lbl2.TabIndex = 20;
             lbl2.Text = "Users";
             // 
+            // btndelete
+            // 
+            btndelete.Location = new Point(701, 786);
+            btndelete.Name = "btndelete";
+            btndelete.Size = new Size(125, 32);
+            btndelete.TabIndex = 21;
+            btndelete.Text = "Delete";
+            btndelete.UseVisualStyleBackColor = true;
+            btndelete.Click += btndelete_Click;
+            // 
             // pnlUsers
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(btndelete);
             Controls.Add(lbl2);
             Controls.Add(dgvusers);
             Margin = new Padding(3, 2, 3, 2);
@@ -70,5 +82,6 @@
         #endregion
         private DataGridView dgvusers;
         private Label lbl2;
+        private Button btndelete;
     }
 }

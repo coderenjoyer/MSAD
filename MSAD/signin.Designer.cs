@@ -109,9 +109,9 @@
             label1.ForeColor = Color.White;
             label1.Location = new Point(58, 166);
             label1.Name = "label1";
-            label1.Size = new Size(216, 32);
+            label1.Size = new Size(121, 32);
             label1.TabIndex = 2;
-            label1.Text = "School ID Number:";
+            label1.Text = "School ID:";
             // 
             // txtpass
             // 
