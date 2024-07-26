@@ -41,19 +41,19 @@ namespace MSAD
                         case "Certification":
                             certificationcount++;
                             break;
-                        case "Honorable Dismissal":
+                        case "Honorable Dismissal / Certificate of Transfer Credentials":
                             hondiscount++;
                             break;
                         case "Diploma":
                             diplomacount++;
                             break;
-                        case "Accreditation":
+                        case "Accreditation Form / Completion Form":
                             accrecount++;
                             break;
-                        case "Grade":
+                        case "Grades / Study Loads":
                             gradecount++;
                             break;
-                        case "Documentary Stamps":
+                        case "Documentary Stamp/s":
                             documentarycount++;
                             break;
                         case "Transcript of Records":
@@ -65,10 +65,10 @@ namespace MSAD
                         case "Photocopy":
                             photocopycount++;
                             break;
-                        case "Mailing Express":
+                        case "Mailing Expenses":
                             mailingcount++;
                             break;
-                        case "CAV":
+                        case "C.A.V / Red Ribbon / Apostille":
                             cavcount++;
                             break;
                         default:

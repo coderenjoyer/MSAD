@@ -40,9 +40,6 @@ namespace MSAD
 
         private void btnDash_Click(object sender, EventArgs e)
         {
-            
-
-
             mainPanel.Controls.Clear();
             mainPanel.Controls.Add(pnlDash);
         }

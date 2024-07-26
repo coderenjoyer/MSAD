@@ -72,7 +72,6 @@
             label15 = new Label();
             label14 = new Label();
             cmbdocutype = new ComboBox();
-            label27 = new Label();
             groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)profile).BeginInit();
             groupBox2.SuspendLayout();
@@ -567,25 +566,12 @@
             cmbdocutype.Size = new Size(366, 34);
             cmbdocutype.TabIndex = 0;
             // 
-            // label27
-            // 
-            label27.AutoSize = true;
-            label27.Font = new Font("Palatino Linotype", 14.25F);
-            label27.ImageAlign = ContentAlignment.MiddleLeft;
-            label27.Location = new Point(515, 9);
-            label27.Name = "label27";
-            label27.Size = new Size(267, 26);
-            label27.TabIndex = 14;
-            label27.Text = "Cerificate of Enrollment : 51.66";
-            label27.Click += label27_Click;
-            // 
             // userdashboard
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Maroon;
             ClientSize = new Size(1919, 830);
-            Controls.Add(label27);
             Controls.Add(groupBox3);
             Controls.Add(groupBox2);
             Controls.Add(groupBox1);
@@ -650,6 +636,5 @@
         private Label label26;
         private TextBox txtstat;
         private Button btncancel;
-        private Label label27;
     }
 }
