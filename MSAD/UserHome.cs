@@ -46,7 +46,7 @@ namespace MSAD
 
         private void btnhome_Click(object sender, EventArgs e)
         {
-
+            loadform(new userdashboard(accountId));
         }
 
         private void btnlogout_Click(object sender, EventArgs e)
@@ -57,6 +57,11 @@ namespace MSAD
         private void UserHome_Load(object sender, EventArgs e)
         {
             loadform(new userdashboard(accountId));
+        }
+
+        private void btnreqdoc_Click(object sender, EventArgs e)
+        {
+            loadform(new Docstat(accountId));
         }
     }
 

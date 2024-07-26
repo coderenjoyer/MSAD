@@ -62,6 +62,8 @@
             label3 = new Label();
             label2 = new Label();
             groupBox3 = new GroupBox();
+            btncancel = new Button();
+            txtstat = new TextBox();
             label17 = new Label();
             txtemail = new TextBox();
             label16 = new Label();
@@ -70,7 +72,6 @@
             label15 = new Label();
             label14 = new Label();
             cmbdocutype = new ComboBox();
-            txtstat = new TextBox();
             groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)profile).BeginInit();
             groupBox2.SuspendLayout();
@@ -279,7 +280,7 @@
             groupBox2.Controls.Add(label3);
             groupBox2.Controls.Add(label2);
             groupBox2.ForeColor = Color.White;
-            groupBox2.Location = new Point(515, 148);
+            groupBox2.Location = new Point(515, 108);
             groupBox2.Name = "groupBox2";
             groupBox2.Size = new Size(1340, 256);
             groupBox2.TabIndex = 2;
@@ -441,6 +442,7 @@
             // 
             // groupBox3
             // 
+            groupBox3.Controls.Add(btncancel);
             groupBox3.Controls.Add(txtstat);
             groupBox3.Controls.Add(label17);
             groupBox3.Controls.Add(txtemail);
@@ -451,12 +453,35 @@
             groupBox3.Controls.Add(label14);
             groupBox3.Controls.Add(cmbdocutype);
             groupBox3.ForeColor = Color.White;
-            groupBox3.Location = new Point(515, 427);
+            groupBox3.Location = new Point(515, 387);
             groupBox3.Name = "groupBox3";
-            groupBox3.Size = new Size(1340, 256);
+            groupBox3.Size = new Size(1340, 392);
             groupBox3.TabIndex = 3;
             groupBox3.TabStop = false;
             groupBox3.Text = "Document Request";
+            // 
+            // btncancel
+            // 
+            btncancel.BackColor = Color.Gold;
+            btncancel.FlatStyle = FlatStyle.Flat;
+            btncancel.Font = new Font("Palatino Linotype", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btncancel.ForeColor = Color.Black;
+            btncancel.Location = new Point(937, 304);
+            btncancel.Name = "btncancel";
+            btncancel.Size = new Size(155, 42);
+            btncancel.TabIndex = 9;
+            btncancel.Text = "Cancel ";
+            btncancel.UseVisualStyleBackColor = false;
+            btncancel.Click += btncancel_Click;
+            // 
+            // txtstat
+            // 
+            txtstat.Location = new Point(937, 89);
+            txtstat.Name = "txtstat";
+            txtstat.Size = new Size(360, 23);
+            txtstat.TabIndex = 8;
+            txtstat.Text = "Pending";
+            txtstat.Visible = false;
             // 
             // label17
             // 
@@ -470,20 +495,21 @@
             // 
             // txtemail
             // 
-            txtemail.Location = new Point(937, 62);
+            txtemail.Font = new Font("Palatino Linotype", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtemail.Location = new Point(937, 50);
             txtemail.Name = "txtemail";
-            txtemail.Size = new Size(360, 23);
+            txtemail.Size = new Size(360, 33);
             txtemail.TabIndex = 6;
             // 
             // label16
             // 
             label16.AutoSize = true;
             label16.Font = new Font("Palatino Linotype", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label16.Location = new Point(705, 126);
+            label16.Location = new Point(729, 172);
             label16.Name = "label16";
-            label16.Size = new Size(568, 26);
+            label16.Size = new Size(573, 26);
             label16.TabIndex = 5;
-            label16.Text = "*Note: Fees will be given only during the claming of the document*";
+            label16.Text = "*Note: Fees will be given only during the claiming of the document*";
             // 
             // btnsubmit
             // 
@@ -491,9 +517,9 @@
             btnsubmit.FlatStyle = FlatStyle.Flat;
             btnsubmit.Font = new Font("Palatino Linotype", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnsubmit.ForeColor = Color.Black;
-            btnsubmit.Location = new Point(1159, 166);
+            btnsubmit.Location = new Point(1142, 304);
             btnsubmit.Name = "btnsubmit";
-            btnsubmit.Size = new Size(138, 42);
+            btnsubmit.Size = new Size(155, 42);
             btnsubmit.TabIndex = 4;
             btnsubmit.Text = "Submit";
             btnsubmit.UseVisualStyleBackColor = false;
@@ -505,7 +531,7 @@
             txtreason.Location = new Point(242, 123);
             txtreason.Multiline = true;
             txtreason.Name = "txtreason";
-            txtreason.Size = new Size(366, 85);
+            txtreason.Size = new Size(366, 223);
             txtreason.TabIndex = 3;
             // 
             // label15
@@ -537,15 +563,6 @@
             cmbdocutype.Name = "cmbdocutype";
             cmbdocutype.Size = new Size(366, 34);
             cmbdocutype.TabIndex = 0;
-            // 
-            // txtstat
-            // 
-            txtstat.Location = new Point(939, 33);
-            txtstat.Name = "txtstat";
-            txtstat.Size = new Size(355, 23);
-            txtstat.TabIndex = 8;
-            txtstat.Text = "Pending";
-            txtstat.Visible = false;
             // 
             // userdashboard
             // 
@@ -616,5 +633,6 @@
         private Label label25;
         private Label label26;
         private TextBox txtstat;
+        private Button btncancel;
     }
 }

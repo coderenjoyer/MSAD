@@ -126,6 +126,7 @@
             btnreqdoc.TabIndex = 3;
             btnreqdoc.Text = "Document Status";
             btnreqdoc.UseVisualStyleBackColor = false;
+            btnreqdoc.Click += btnreqdoc_Click;
             // 
             // btnhome
             // 

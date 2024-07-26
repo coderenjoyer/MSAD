@@ -29,13 +29,13 @@ namespace MSAD
             Panel panel = sender as Panel;
             if (panel != null)
             {
-                // Get the rectangle representing the bounds of the panel
+               
                 Rectangle rect = new Rectangle(0, 0, panel.Width, panel.Height);
 
-                // Set the radius for rounded corners based on the panel's size
-                int radius = Math.Min(panel.Width, panel.Height) / 12; // Increase the divisor for less rounded corners
+              
+                int radius = Math.Min(panel.Width, panel.Height) / 12; 
 
-                // Create a graphics path for rounded corners
+                
                 GraphicsPath path = new GraphicsPath();
                 path.AddArc(rect.X, rect.Y, radius, radius, 180, 90);
                 path.AddArc(rect.Right - radius, rect.Y, radius, radius, 270, 90);
@@ -43,7 +43,7 @@ namespace MSAD
                 path.AddArc(rect.X, rect.Bottom - radius, radius, radius, 90, 90);
                 path.CloseFigure();
 
-                // Apply the graphics path to the panel's region
+                
                 panel.Region = new Region(path);
             }
         }
@@ -82,7 +82,7 @@ namespace MSAD
                 indexRow = e.RowIndex;
                 DataGridViewRow row = dgvdocureq.Rows[indexRow];
 
-                txtaccid.Text = row.Cells["account_id"].Value?.ToString();
+                txtaccid.Text = row.Cells["req_id"].Value?.ToString();
                 txtemail.Text = row.Cells["email"].Value?.ToString();
                 txtreason.Text = row.Cells["reason"].Value?.ToString();
             }
@@ -90,9 +90,23 @@ namespace MSAD
 
         private void btnsendemail_Click(object sender, EventArgs e)
         {
-            SendEmail();
-            UpdateDatabaseStatus("Approved");
-            Loaddata();
+            if (indexRow >= 0)
+            {
+                if (IsStatusPending())
+                {
+                    SendEmail();
+                    UpdateDatabaseStatus("Approved");
+                    Loaddata();
+                }
+                else
+                {
+                    MessageBox.Show("Only pending requests can be approved.");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Please select a row to approve.");
+            }
         }
 
         private void SendEmail()
@@ -100,14 +114,14 @@ namespace MSAD
             string toEmail = txtemail.Text;
             string messageBody = txtmsg.Text;
 
-            // Validate input fields
+            
             if (string.IsNullOrWhiteSpace(toEmail) || string.IsNullOrWhiteSpace(messageBody))
             {
                 MessageBox.Show("Please fill out both the email and the message fields.");
                 return;
             }
 
-            // Validate the email address format
+          
             if (!IsValidEmail(toEmail))
             {
                 MessageBox.Show("The email address provided is not valid.");
@@ -116,20 +130,20 @@ namespace MSAD
 
             try
             {
-                // Configure the email
+              
                 using (MailMessage mail = new MailMessage("texkdocretrieval@gmail.com", toEmail))
                 {
                     mail.Subject = "Subject";
                     mail.Body = messageBody;
 
-                    // Configure the SMTP client (Gmail SMTP server)
+                   
                     using (SmtpClient client = new SmtpClient("smtp.gmail.com", 587))
                     {
                         client.UseDefaultCredentials = false;
-                        client.Credentials = new NetworkCredential("texkdocretrieval@gmail.com", "pfpk eniq lhpu sakh"); // Replace with your app password
+                        client.Credentials = new NetworkCredential("texkdocretrieval@gmail.com", "pfpk eniq lhpu sakh");
                         client.EnableSsl = true;
 
-                        // Send the email
+                      
                         client.Send(mail);
                     }
                 }
@@ -138,15 +152,15 @@ namespace MSAD
             }
             catch (SmtpException smtpEx)
             {
-                // Detailed error message for SMTP issues
+                
                 MessageBox.Show($"SMTP error sending email: {smtpEx.Message}\n{smtpEx.StackTrace}");
-                LogError(smtpEx);  // Log error details for further investigation
+                LogError(smtpEx); 
             }
             catch (Exception ex)
             {
-                // General error handling
+               
                 MessageBox.Show($"General error sending email: {ex.Message}\n{ex.StackTrace}");
-                LogError(ex);  // Log error details for further investigation
+                LogError(ex);  
             }
         }
 
@@ -165,20 +179,20 @@ namespace MSAD
 
         private void LogError(Exception ex)
         {
-            // Simple logging example; you may want to use a more robust logging framework
+            
             System.IO.File.AppendAllText("error_log.txt", $"{DateTime.Now}: {ex.Message}\n{ex.StackTrace}\n");
         }
 
         private void UpdateDatabaseStatus(string status)
         {
             string connectionString = "Data Source=tekdoc.database.windows.net;Initial Catalog=TekDoc;User ID=khalil.peque@cit.edu;Password=Miakhally311;Encrypt=True;Authentication=ActiveDirectoryPassword";
-            string query = "UPDATE DocuRequest SET stat = @Status WHERE account_id = @AccId";
+            string query = "UPDATE DocuRequest SET stat = @Status WHERE req_id = @ReqId";
 
-            // Retrieve the account_id from the relevant source, for example, a TextBox
-            int accountId;
-            if (!int.TryParse(txtaccid.Text, out accountId))
+            
+            int RequestId;
+            if (!int.TryParse(txtaccid.Text, out RequestId))
             {
-                MessageBox.Show("Invalid account ID.");
+                MessageBox.Show("Invalid Request ID.");
                 return;
             }
 
@@ -189,7 +203,7 @@ namespace MSAD
                     using (SqlCommand command = new SqlCommand(query, connection))
                     {
                         command.Parameters.AddWithValue("@Status", status);
-                        command.Parameters.AddWithValue("@AccId", accountId);
+                        command.Parameters.AddWithValue("@ReqId", RequestId);
 
                         connection.Open();
                         int rowsAffected = command.ExecuteNonQuery();
@@ -214,7 +228,19 @@ namespace MSAD
 
         private void btnreject_Click(object sender, EventArgs e)
         {
+            UpdateDatabaseStatus("Rejected");
+            Loaddata();
+        }
 
+        private bool IsStatusPending()
+        {
+            if (indexRow >= 0)
+            {
+                DataGridViewRow row = dgvdocureq.Rows[indexRow];
+                string currentStatus = row.Cells["stat"].Value?.ToString();
+                return currentStatus == "Pending";
+            }
+            return false;
         }
     }
 }

@@ -73,7 +73,7 @@ namespace MSAD
         {
 
         }
-            
+
         private void btnsubmit_Click(object sender, EventArgs e)
         {
             string connectionString = "Data Source=tekdoc.database.windows.net;Initial Catalog=TekDoc;User ID=khalil.peque@cit.edu;Password=Miakhally311;Encrypt=True;Authentication=ActiveDirectoryPassword";
@@ -87,7 +87,7 @@ namespace MSAD
 
                     using (SqlCommand command = new SqlCommand(query, connection))
                     {
-                        command.Parameters.AddWithValue("@AccId", accountId); 
+                        command.Parameters.AddWithValue("@AccId", accountId);
                         command.Parameters.AddWithValue("@DocumentType", cmbdocutype.SelectedItem.ToString());
                         command.Parameters.AddWithValue("@Reason", txtreason.Text);
                         command.Parameters.AddWithValue("@Email", txtemail.Text);
@@ -112,5 +112,68 @@ namespace MSAD
             }
         }
 
+        private void btncancel_Click(object sender, EventArgs e)
+        {
+            CancelMostRecentRequest();
+        }
+
+        private void CancelMostRecentRequest()
+        {
+            string connectionString = "Data Source=tekdoc.database.windows.net;Initial Catalog=TekDoc;User ID=khalil.peque@cit.edu;Password=Miakhally311;Encrypt=True;Authentication=ActiveDirectoryPassword";
+            string selectQuery = "SELECT TOP 1 req_id FROM DocuRequest WHERE account_id = @AccId ORDER BY req_id DESC";
+            string updateQuery = "UPDATE DocuRequest SET stat = 'Cancelled' WHERE req_id = @RequestId";
+
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    connection.Open();
+
+                    int mostRecentRequestId = -1;
+
+                    // Find the most recent request
+                    using (SqlCommand selectCommand = new SqlCommand(selectQuery, connection))
+                    {
+                        selectCommand.Parameters.AddWithValue("@AccId", accountId);
+
+                        using (SqlDataReader reader = selectCommand.ExecuteReader())
+                        {
+                            if (reader.Read())
+                            {
+                                mostRecentRequestId = reader.GetInt32(0);
+                            }
+                        }
+                    }
+
+                    if (mostRecentRequestId != -1)
+                    {
+                        // Update the status of the most recent request
+                        using (SqlCommand updateCommand = new SqlCommand(updateQuery, connection))
+                        {
+                            updateCommand.Parameters.AddWithValue("@RequestId", mostRecentRequestId);
+
+                            int result = updateCommand.ExecuteNonQuery();
+
+                            if (result > 0)
+                            {
+                                MessageBox.Show("The most recent document request has been cancelled successfully.");
+                            }
+                            else
+                            {
+                                MessageBox.Show("Failed to cancel the most recent document request.");
+                            }
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("No document requests found to cancel.");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("An error occurred while cancelling the document request: " + ex.Message);
+            }
+        }
     }
 }

@@ -28,47 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
-            dataGridView1 = new DataGridView();
-            label1 = new Label();
-            dataGridView2 = new DataGridView();
+            dgvusers = new DataGridView();
             lbl2 = new Label();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvusers).BeginInit();
             SuspendLayout();
             // 
-            // dataGridView1
+            // dgvusers
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(62, 73);
-            dataGridView1.Margin = new Padding(3, 2, 3, 2);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(767, 677);
-            dataGridView1.TabIndex = 0;
-            // 
-            // label1
-            // 
-            label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(62, 32);
-            label1.Name = "label1";
-            label1.Size = new Size(90, 39);
-            label1.TabIndex = 18;
-            label1.Text = "Profile";
-            // 
-            // dataGridView2
-            // 
-            dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView2.Location = new Point(876, 73);
-            dataGridView2.Margin = new Padding(3, 2, 3, 2);
-            dataGridView2.Name = "dataGridView2";
-            dataGridView2.RowHeadersWidth = 51;
-            dataGridView2.Size = new Size(767, 677);
-            dataGridView2.TabIndex = 19;
+            dgvusers.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgvusers.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvusers.Location = new Point(59, 88);
+            dgvusers.Margin = new Padding(3, 2, 3, 2);
+            dgvusers.Name = "dgvusers";
+            dgvusers.RowHeadersWidth = 51;
+            dgvusers.Size = new Size(767, 677);
+            dgvusers.TabIndex = 19;
             // 
             // lbl2
             // 
             lbl2.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lbl2.Location = new Point(889, 32);
+            lbl2.Location = new Point(59, 34);
             lbl2.Name = "lbl2";
             lbl2.Size = new Size(90, 39);
             lbl2.TabIndex = 20;
@@ -79,22 +58,17 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(lbl2);
-            Controls.Add(dataGridView2);
-            Controls.Add(label1);
-            Controls.Add(dataGridView1);
+            Controls.Add(dgvusers);
             Margin = new Padding(3, 2, 3, 2);
             Name = "pnlUsers";
             Size = new Size(1904, 846);
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();
+            Load += pnlUsers_Load;
+            ((System.ComponentModel.ISupportInitialize)dgvusers).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
-
-        private DataGridView dataGridView1;
-        private Label label1;
-        private DataGridView dataGridView2;
+        private DataGridView dgvusers;
         private Label lbl2;
     }
 }

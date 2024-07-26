@@ -43,17 +43,17 @@
             lblReq = new Label();
             dgvReq = new DataGridView();
             label10 = new Label();
-            label2 = new Label();
-            label3 = new Label();
-            label16 = new Label();
-            label17 = new Label();
-            label18 = new Label();
-            label19 = new Label();
-            label20 = new Label();
-            label21 = new Label();
-            label22 = new Label();
-            label23 = new Label();
-            label24 = new Label();
+            lblcert = new Label();
+            lblhondis = new Label();
+            lbldip = new Label();
+            lbltrans = new Label();
+            lblscan = new Label();
+            lblphoto = new Label();
+            lblgrade = new Label();
+            lblcav = new Label();
+            lbldoc = new Label();
+            lblaccre = new Label();
+            lblmail = new Label();
             ((System.ComponentModel.ISupportInitialize)dgvReq).BeginInit();
             SuspendLayout();
             // 
@@ -191,120 +191,120 @@
             label10.Size = new Size(100, 23);
             label10.TabIndex = 0;
             // 
-            // label2
+            // lblcert
             // 
-            label2.Location = new Point(155, 116);
-            label2.Name = "label2";
-            label2.Size = new Size(77, 23);
-            label2.TabIndex = 30;
-            label2.Text = "label2";
-            label2.TextAlign = ContentAlignment.MiddleLeft;
+            lblcert.Location = new Point(155, 116);
+            lblcert.Name = "lblcert";
+            lblcert.Size = new Size(77, 23);
+            lblcert.TabIndex = 30;
+            lblcert.Text = "label2";
+            lblcert.TextAlign = ContentAlignment.MiddleLeft;
             // 
-            // label3
+            // lblhondis
             // 
-            label3.Location = new Point(519, 203);
-            label3.Name = "label3";
-            label3.Size = new Size(77, 23);
-            label3.TabIndex = 31;
-            label3.Text = "label3";
-            label3.TextAlign = ContentAlignment.MiddleLeft;
+            lblhondis.Location = new Point(519, 203);
+            lblhondis.Name = "lblhondis";
+            lblhondis.Size = new Size(77, 23);
+            lblhondis.TabIndex = 31;
+            lblhondis.Text = "label3";
+            lblhondis.TextAlign = ContentAlignment.MiddleLeft;
             // 
-            // label16
+            // lbldip
             // 
-            label16.Location = new Point(122, 279);
-            label16.Name = "label16";
-            label16.Size = new Size(77, 23);
-            label16.TabIndex = 32;
-            label16.Text = "label16";
-            label16.TextAlign = ContentAlignment.MiddleLeft;
+            lbldip.Location = new Point(122, 279);
+            lbldip.Name = "lbldip";
+            lbldip.Size = new Size(77, 23);
+            lbldip.TabIndex = 32;
+            lbldip.Text = "label16";
+            lbldip.TextAlign = ContentAlignment.MiddleLeft;
             // 
-            // label17
+            // lbltrans
             // 
-            label17.Location = new Point(881, 117);
-            label17.Name = "label17";
-            label17.Size = new Size(77, 23);
-            label17.TabIndex = 33;
-            label17.Text = "label17";
-            label17.TextAlign = ContentAlignment.MiddleLeft;
+            lbltrans.Location = new Point(881, 117);
+            lbltrans.Name = "lbltrans";
+            lbltrans.Size = new Size(77, 23);
+            lbltrans.TabIndex = 33;
+            lbltrans.Text = "label17";
+            lbltrans.TextAlign = ContentAlignment.MiddleLeft;
             // 
-            // label18
+            // lblscan
             // 
-            label18.Location = new Point(745, 200);
-            label18.Name = "label18";
-            label18.Size = new Size(77, 23);
-            label18.TabIndex = 34;
-            label18.Text = "label18";
-            label18.TextAlign = ContentAlignment.MiddleLeft;
+            lblscan.Location = new Point(745, 200);
+            lblscan.Name = "lblscan";
+            lblscan.Size = new Size(77, 23);
+            lblscan.TabIndex = 34;
+            lblscan.Text = "label18";
+            lblscan.TextAlign = ContentAlignment.MiddleLeft;
             // 
-            // label19
+            // lblphoto
             // 
-            label19.Location = new Point(798, 276);
-            label19.Name = "label19";
-            label19.Size = new Size(77, 23);
-            label19.TabIndex = 35;
-            label19.Text = "label19";
-            label19.TextAlign = ContentAlignment.MiddleLeft;
+            lblphoto.Location = new Point(798, 276);
+            lblphoto.Name = "lblphoto";
+            lblphoto.Size = new Size(77, 23);
+            lblphoto.TabIndex = 35;
+            lblphoto.Text = "label19";
+            lblphoto.TextAlign = ContentAlignment.MiddleLeft;
             // 
-            // label20
+            // lblgrade
             // 
-            label20.Location = new Point(212, 491);
-            label20.Name = "label20";
-            label20.Size = new Size(77, 23);
-            label20.TabIndex = 36;
-            label20.Text = "label20";
-            label20.TextAlign = ContentAlignment.MiddleLeft;
+            lblgrade.Location = new Point(212, 491);
+            lblgrade.Name = "lblgrade";
+            lblgrade.Size = new Size(77, 23);
+            lblgrade.TabIndex = 36;
+            lblgrade.Text = "label20";
+            lblgrade.TextAlign = ContentAlignment.MiddleLeft;
             // 
-            // label21
+            // lblcav
             // 
-            label21.Location = new Point(965, 488);
-            label21.Name = "label21";
-            label21.Size = new Size(77, 23);
-            label21.TabIndex = 37;
-            label21.Text = "label21";
-            label21.TextAlign = ContentAlignment.MiddleLeft;
+            lblcav.Location = new Point(965, 488);
+            lblcav.Name = "lblcav";
+            lblcav.Size = new Size(77, 23);
+            lblcav.TabIndex = 37;
+            lblcav.Text = "label21";
+            lblcav.TextAlign = ContentAlignment.MiddleLeft;
             // 
-            // label22
+            // lbldoc
             // 
-            label22.Location = new Point(241, 618);
-            label22.Name = "label22";
-            label22.Size = new Size(77, 23);
-            label22.TabIndex = 38;
-            label22.Text = "label22";
-            label22.TextAlign = ContentAlignment.MiddleLeft;
+            lbldoc.Location = new Point(241, 618);
+            lbldoc.Name = "lbldoc";
+            lbldoc.Size = new Size(77, 23);
+            lbldoc.TabIndex = 38;
+            lbldoc.Text = "label22";
+            lbldoc.TextAlign = ContentAlignment.MiddleLeft;
             // 
-            // label23
+            // lblaccre
             // 
-            label23.Location = new Point(390, 374);
-            label23.Name = "label23";
-            label23.Size = new Size(77, 23);
-            label23.TabIndex = 39;
-            label23.Text = "label23";
-            label23.TextAlign = ContentAlignment.MiddleLeft;
+            lblaccre.Location = new Point(390, 374);
+            lblaccre.Name = "lblaccre";
+            lblaccre.Size = new Size(77, 23);
+            lblaccre.TabIndex = 39;
+            lblaccre.Text = "label23";
+            lblaccre.TextAlign = ContentAlignment.MiddleLeft;
             // 
-            // label24
+            // lblmail
             // 
-            label24.Location = new Point(836, 371);
-            label24.Name = "label24";
-            label24.Size = new Size(77, 23);
-            label24.TabIndex = 40;
-            label24.Text = "label24";
-            label24.TextAlign = ContentAlignment.MiddleLeft;
+            lblmail.Location = new Point(836, 371);
+            lblmail.Name = "lblmail";
+            lblmail.Size = new Size(77, 23);
+            lblmail.TabIndex = 40;
+            lblmail.Text = "label24";
+            lblmail.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // pnlDash
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            Controls.Add(label24);
-            Controls.Add(label23);
-            Controls.Add(label22);
-            Controls.Add(label21);
-            Controls.Add(label20);
-            Controls.Add(label19);
-            Controls.Add(label18);
-            Controls.Add(label17);
-            Controls.Add(label16);
-            Controls.Add(label3);
-            Controls.Add(label2);
+            Controls.Add(lblmail);
+            Controls.Add(lblaccre);
+            Controls.Add(lbldoc);
+            Controls.Add(lblcav);
+            Controls.Add(lblgrade);
+            Controls.Add(lblphoto);
+            Controls.Add(lblscan);
+            Controls.Add(lbltrans);
+            Controls.Add(lbldip);
+            Controls.Add(lblhondis);
+            Controls.Add(lblcert);
             Controls.Add(label15);
             Controls.Add(label14);
             Controls.Add(label9);
@@ -344,16 +344,16 @@
         private Label lblReq;
         private DataGridView dgvReq;
         private Label label10;
-        private Label label2;
-        private Label label3;
-        private Label label16;
-        private Label label17;
-        private Label label18;
-        private Label label19;
-        private Label label20;
-        private Label label21;
-        private Label label22;
-        private Label label23;
-        private Label label24;
+        private Label lblcert;
+        private Label lblhondis;
+        private Label lbldip;
+        private Label lbltrans;
+        private Label lblscan;
+        private Label lblphoto;
+        private Label lblgrade;
+        private Label lblcav;
+        private Label lbldoc;
+        private Label lblaccre;
+        private Label lblmail;
     }
 }
